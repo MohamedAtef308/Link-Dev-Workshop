@@ -7,15 +7,13 @@
   --mid-grey: #d9d9d9;
   --grey-border: #e3dbd8;
   --primary-black: #16171a;
-  /* color: var(--dark-blue); */
+  font-size: 14px;
 }
 
 /* GLOBAL STYLES */
 * {
   margin: 0;
   padding: 0;
-  color: var(--dark-blue);
-  font-family: "Plus Jakarta Sans";
 }
 
 label {
@@ -37,7 +35,7 @@ option {
   border-radius: 999px;
   border: 1 solid var(--grey-border);
   color: var(--grey-font);
-  font-size: 16px;
+  font-size: 1.14rem;
 }
 
 input {
@@ -61,7 +59,7 @@ select {
 }
 
 textarea {
-  font-size: 16px;
+  font-size: 1.143rem;
   height: 100%;
   width: 100%;
   resize: none;
@@ -159,35 +157,35 @@ li {
 }
 
 .size-50 {
-  font-size: 50px;
+  font-size: 3.571rem;
 }
 
 .size-45 {
-  font-size: 45px;
+  font-size: 3.214rem;
 }
 
 .size-40 {
-  font-size: 40px;
+  font-size: 2.857rem;
 }
 
 .size-30 {
-  font-size: 30px;
+  font-size: 2.143rem;
 }
 
 .size-22 {
-  font-size: 22px;
+  font-size: 1.571rem;
 }
 
 .size-18 {
-  font-size: 18px;
+  font-size: 1.256rem;
 }
 
 .size-16 {
-  font-size: 16px;
+  font-size: 1.143rem;
 }
 
 .size-14 {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .semi-bold {
@@ -199,17 +197,17 @@ li {
 }
 
 .lh-50 {
-  line-height: 50px;
+  line-height: 3.571rem;
 }
 
 .lh-30 {
-  line-height: 30px;
+  line-height: 2.143rem;
 }
 
-.list {
+ul.list > li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 16px;
+  font-size: 1.143rem;
   color: var(--light-blue);
   margin-right: 15px;
 }
@@ -404,7 +402,7 @@ li {
   background-color: var(--light-blue);
   color: white;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: capitalize;
   border: none;
   border-radius: 150px;
@@ -436,11 +434,11 @@ li {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1.4px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .section-lg-h {
-  font-size: 50px;
+  font-size: 3.571rem;
   line-height: 60px;
   margin-top: 10px;
   font-weight: bold;
@@ -534,11 +532,17 @@ div.rounded-input:has(> textarea) {
   border: 1px solid var(--light-blue);
 }
 
+/*  */
+/* RESET & DEFAULTS */
+/*  */
+
 body {
   background-color: var(--background-white);
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--dark-blue);
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /*  */
@@ -569,7 +573,7 @@ body {
 
 .navbar-logo {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2.286rem;
   display: flex;
   align-items: center;
 }
@@ -584,7 +588,7 @@ body {
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  font-size: 15px;
+  font-size: 1.071rem;
   font-weight: bold;
 }
 
@@ -611,7 +615,7 @@ body {
 }
 
 .relax-travel-container p {
-  font-size: 80px;
+  font-size: 5.714rem;
   font-weight: bold;
   margin-bottom: 41px;
   /* line-height: 90px; */
@@ -761,7 +765,7 @@ span.line {
   font-family: "Font Awesome 5 Free";
   content: "\f00c";
   font-weight: 900;
-  font-size: 16px;
+  font-size: 1.143rem;
   color: var(--light-blue);
   margin-right: 15px;
 }
@@ -918,31 +922,16 @@ footer * {
   justify-content: space-between;
 }
 
-ul.angle-list > li::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f107";
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--light-blue);
-  margin-right: 15px;
+ul.angle-right-list > li::before {
+  content: "\f105";
 }
 
 ul.check-list > li::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f073";
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--light-blue);
-  margin-right: 15px;
+  content: "\f00c";
 }
 
 ul.calendar-list > li::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f00c";
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--light-blue);
-  margin-right: 15px;
+  content: "\f073";
 }
 
 .copyrights-terms-container {
