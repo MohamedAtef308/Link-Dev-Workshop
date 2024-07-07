@@ -68,6 +68,11 @@ textarea {
   border: none;
 }
 
+textarea::placeholder {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--grey-font);
+}
+
 a {
   text-decoration: none;
 }
@@ -589,6 +594,7 @@ body {
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  color: var(--dark-blue);
   font-size: 1.071rem;
   font-weight: bold;
 }
