@@ -1,0 +1,23 @@
+nav {
+  @include flex(space-between, center);
+  margin-top: 20px;
+  width: 70vw; // may change
+  background-color: white;
+  padding: 10px;
+  border-radius: $round-full;
+
+  .nav__links-container {
+    @include flex(space-between, center);
+    gap: 20px;
+
+    button {
+      @extend .transparent;
+      text-transform: uppercase;
+      color: $dark-blue;
+      font: {
+        size: $font-16;
+        weight: bold;
+      }
+    }
+  }
+}

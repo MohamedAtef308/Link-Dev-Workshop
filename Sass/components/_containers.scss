@@ -1,0 +1,23 @@
+.container {
+  width: $section-width;
+  border-radius: $round-lg;
+}
+
+.container-lg {
+  background-color: white;
+  border-radius: 50px;
+  padding: 120px 12%;
+
+  &.background-img {
+    background-image: url("./assets/images/white\ background\ items.png");
+    background-repeat: no-repeat;
+    position: static;
+    padding-bottom: 327px;
+  }
+}
+
+.input-container {
+    @include flex(flex-start, stretch, column);
+    width: $input-width;
+    gap: 10px;
+}

@@ -1,0 +1,15 @@
+// .text-input-container {
+//   @include flex(space-between, center);
+//   box-sizing: border-box;
+//   width: 260px;
+//   height: 60px;
+//   margin-top: 5px;
+//   padding-top: 15px;
+//   padding-bottom: 15px;
+//   border: $grey-border;
+//   border-radius: $round-full;
+
+//   &:has(> textarea) {
+//     border-radius: $round-sm;
+//   }
+// }

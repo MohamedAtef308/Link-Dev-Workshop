@@ -1,0 +1,13 @@
+.transparent {
+  background: transparent;
+  border: none;
+}
+
+.transparent-b {
+  background: transparent;
+  border: 1px solid $grey-font;
+}
+
+.transition {
+  transition: all 0.5s linear;
+}

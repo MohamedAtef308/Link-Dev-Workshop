@@ -1,0 +1,330 @@
+.transparent, nav .nav__links-container button {
+  background: transparent;
+  border: none;
+}
+
+.transparent-b, footer .logo-social-media .social-media > div {
+  background: transparent;
+  border: 1px solid #727272;
+}
+
+.transition, footer .logo-social-media .social-media > div, .card {
+  transition: all 0.5s linear;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 999px;
+  padding: 20px 30px;
+  height: 60px;
+  border: none;
+  color: white;
+  background-color: #00b8ff;
+}
+
+.btn--transparent {
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  background-color: transparent;
+}
+
+.btn--circle {
+  width: 55px;
+  padding: 0;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.btn--circle-sm {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.card {
+  border-radius: 20px;
+  border: 1px solid #e3dbd8;
+  padding: 30px;
+}
+.card:hover {
+  border: 1px solid #00b8ff;
+}
+
+.container {
+  width: 67vw;
+  border-radius: 50px;
+}
+
+.container-lg {
+  background-color: white;
+  border-radius: 50px;
+  padding: 120px 12%;
+}
+.container-lg.background-img {
+  background-image: url("./assets/images/white background items.png");
+  background-repeat: no-repeat;
+  position: static;
+  padding-bottom: 327px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  width: 260px;
+  gap: 10px;
+}
+
+.section-heading {
+  width: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section-heading > p {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  font-size: 1rem;
+}
+.section-heading > h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 41px;
+  line-height: 90px;
+  width: 660px;
+  text-transform: capitalize;
+}
+.section-heading > h2 {
+  text-transform: capitalize;
+  font-size: 3.571rem;
+  line-height: 60px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.container-lg .section-heading {
+  width: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 2.286rem;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 70vw;
+  background-color: white;
+  padding: 10px;
+  border-radius: 999px;
+}
+nav .nav__links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+nav .nav__links-container button {
+  text-transform: uppercase;
+  color: #2437ac;
+  font-size: 1.143rem;
+  font-weight: bold;
+}
+
+hero {
+  margin-top: 80px;
+}
+hero .hero__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+hero .hero__img__container {
+  width: 440px;
+  height: 640px;
+}
+hero .hero__img__container .hero__cards-container > div {
+  position: absolute;
+}
+hero .hero__img__container .hero__cards-container > div .country-card {
+  position: relative;
+  width: 190px;
+  height: 40px;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 9.98px;
+  border: 0.5px solid var(--grey-border);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+hero .hero__img__container .hero__cards-container > div .country-card p {
+  margin-left: 15px;
+}
+hero .hero__img__container .hero__cards-container > div:nth-child(1) .country-card {
+  top: 71px;
+  left: -59px;
+}
+hero .hero__img__container .hero__cards-container > div:nth-child(2) .country-card {
+  top: 71px;
+  left: 316px;
+}
+hero .hero__img__container .hero__cards-container > div:nth-child(3) .country-card {
+  top: 307px;
+  left: -75px;
+}
+hero .hero__img__container .hero__cards-container > div:nth-child(4) .country-card {
+  top: 482px;
+  left: -110px;
+}
+hero .hero__img__container .hero__cards-container > div:nth-child(5) .country-card {
+  top: 464px;
+  left: 316px;
+}
+
+main {
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+section.coaching-support {
+  margin-top: 40px;
+}
+
+section > div.success-story {
+  margin-top: -321px;
+}
+
+footer {
+  width: 100%;
+  background-color: #2437ac;
+}
+footer * {
+  color: white;
+}
+footer > div:first-child {
+  height: 548px;
+  background-image: url("./assets/images/Vector.png");
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+}
+footer .logo-social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .logo-social-media .social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .logo-social-media .social-media > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+footer .logo-social-media .social-media > div:hover {
+  border: 1px solid #00b8ff;
+}
+footer .lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  width: 100%;
+}
+footer .lists h5 {
+  font-size: 1.571rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+footer .lists .list {
+  margin-top: 30px;
+}
+footer .lists .list li {
+  margin-top: 10px;
+  font-size: 1.143rem;
+  text-transform: capitalize;
+}
+footer .lists .list dt {
+  margin-top: 20px;
+}
+footer .lists .list dd {
+  margin-top: 5px;
+  font-size: 1.256rem;
+  font-weight: 600;
+  width: 17rem;
+}
+footer .lists .list.list--angle > li::before {
+  content: "\f105";
+}
+footer .lists .list.list--check > li::before {
+  content: "\f00c";
+}
+footer .lists .list.list--calendar > dt::before {
+  content: "\f073";
+}
+footer .lists .email-container {
+  margin-top: 30px;
+  width: 300px;
+  font-size: 1.143rem;
+}
+footer > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  margin: 0 auto;
+  opacity: 0.8;
+  font-size: 1.143rem;
+  padding: 30px 0;
+}
+footer > div:last-child > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  width: 402px;
+}
+
+/*# sourceMappingURL=output.css.map */

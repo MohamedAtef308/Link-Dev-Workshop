@@ -1,6 +1,8 @@
 // ABSTRACT
-@import "./abstracts/mixins";
 @import "./abstracts/variables";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/extend";
 
 // BASE
 @import "./base/reset";
@@ -9,12 +11,18 @@
 // COMPONENTS
 @import "./components/buttons";
 @import "./components/cards";
+@import "./components/containers";
+@import "./components/headings";
+@import "./components/lists";
+@import "./components/logo";
+@import "./components/text-inputs";
 
 // LAYOUT
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/main";
 @import "./layout/section";
+@import "./layout/footer";
 
 // PAGES
 @import "./pages/home";

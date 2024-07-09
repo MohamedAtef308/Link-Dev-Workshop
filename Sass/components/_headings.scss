@@ -1,0 +1,37 @@
+.section-heading {
+    width: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  // PARAGRAPH
+  &>p {
+    text-transform: uppercase;
+    font-weight: $semi-bold;
+    letter-spacing: 1.4px;
+    font-size: $font-14;
+  }
+
+  // HEADING
+  &>h1 {
+    font-size: $font-70;
+    font-weight: bold;
+    margin-bottom: 41px;
+    line-height: 90px;
+    width: 660px;
+    text-transform: capitalize;
+  }
+
+  &>h2 {
+    text-transform: capitalize;
+    font-size: $font-50;
+    line-height: 60px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+}
+
+.container-lg .section-heading{
+  width: 630px;
+  @include flex(center, center, column);
+}

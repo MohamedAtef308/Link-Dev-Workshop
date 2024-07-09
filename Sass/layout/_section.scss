@@ -1,0 +1,8 @@
+// offset sections
+section.coaching-support {
+    margin-top: section-margin-top-offset(160);
+}
+
+section > div.success-story {
+    margin-top: section-margin-top-offset(-201);
+}

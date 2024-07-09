@@ -1,0 +1,31 @@
+.btn {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: $round-full;
+  padding: 20px 30px;
+  height: 60px;
+  border:none;
+  color: white;
+  background-color: $light-blue;
+}
+
+.btn--transparent {
+    border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  background-color: transparent;
+}
+
+.btn--circle {
+width: 55px;
+  padding: 0;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.btn--circle-sm {
+      width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 100%;
+}

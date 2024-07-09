@@ -1,0 +1,10 @@
+.card {
+    @extend .transition;
+    border-radius: $round-sm;
+    border: $border-grey;
+    padding: 30px;
+
+    &:hover {
+        border: $border-light-blue;
+    }
+}
