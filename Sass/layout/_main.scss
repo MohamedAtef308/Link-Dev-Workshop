@@ -1,6 +1,6 @@
 main {
     width: 100%;
-    margin-top: $section-margin-top;
+    margin-top: calc($section-margin-top + 80px);
     margin-bottom: $section-margin-top;
     display: flex;
     flex-direction: column;

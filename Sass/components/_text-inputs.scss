@@ -1,15 +1,46 @@
-// .text-input-container {
-//   @include flex(space-between, center);
-//   box-sizing: border-box;
-//   width: 260px;
-//   height: 60px;
-//   margin-top: 5px;
-//   padding-top: 15px;
-//   padding-bottom: 15px;
-//   border: $grey-border;
-//   border-radius: $round-full;
+.text-input {
+  @include flex(space-between, center);
+  box-sizing: border-box;
+  width: $input-width;
+  height: $input-height;
+  border: $border-grey;
+  border-radius: $round-full;
 
-//   &:has(> textarea) {
-//     border-radius: $round-sm;
-//   }
-// }
+  &.text-input--semi-transparent {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    width: calc($input-width + 40px);
+
+    input {
+      color: white;
+      width: calc($input-width - ($input-height / 3));
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    // ICON
+    & > div:last-child {
+      @include flex(center, center);
+      background-color: $light-blue;
+      width: $input-height;
+      height: $input-height;
+      font: $font-16;
+      border-radius: 50%;
+    }
+  }
+
+  &:has(> textarea) {
+    border-radius: $round-sm;
+  }
+
+  //   &.text-input--1-icon {
+  //     padding-right: 20px;
+  //   }
+
+  &.text-input--2-icon {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

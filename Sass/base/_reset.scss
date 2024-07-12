@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* TODO: may add box-sizing: border-box */
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  padding-left: $round-sm;
+  height: 100%;
+}
+
+input[type="number"] {
+    text-align: center;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover, select:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+textarea {
+  font-size: $font-16;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+select {
+  background-color: transparent;
+  text-align: center;
+}
+
+label {
+  text-transform: capitalize;
+}
+
+textarea::placeholder {
+  font-family: $font-stack;
+  color: $grey-font;
+}
+
+details {
+  margin-top: 30px;
+}
+
+summary {
+  list-style: none;
+
+  font: {
+    size: $font-18;
+    weight: $semi-bold;
+  }
+}
+
+summary + p {
+  margin-top: 10px;
+  color: $grey-font;
+}
+
+.icon * {
+  font-family: "icomoon";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

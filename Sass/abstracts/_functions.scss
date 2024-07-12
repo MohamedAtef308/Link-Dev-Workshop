@@ -1,3 +1,7 @@
 @function section-margin-top-offset($margin-top) {
-    @return ($margin-top - 120) * 1px;
+  @return ($margin-top - 120) * 1px;
+}
+
+@function px-2-rem($value) {
+  @return $value / 14px;
 }

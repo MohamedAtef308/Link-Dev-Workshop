@@ -3,4 +3,18 @@
     justify-content: $main;
     align-items: $cross;
     flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin gap-width($space, $n-elements) {
+  gap: $space;
+  &> div, &>article {
+    width: calc((100% - ($n-elements * $space)) / $n-elements);
+  }
+}
+
+@mixin grid($col:2, $row:2) {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  grid-template-rows: repeat($row, 1fr);
 }

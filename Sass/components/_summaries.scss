@@ -1,0 +1,24 @@
+summary.angle {
+  @include flex(space-between, center);
+
+  & > div:last-child {
+    @include flex(center, center);
+    @extend .transition;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: $round-full;
+    background-color: white;
+    color: $dark-blue;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+details[open] summary.angle > div:last-child {
+  transform: rotate(-90deg);
+  background-color: $light-blue;
+  color: white;
+}

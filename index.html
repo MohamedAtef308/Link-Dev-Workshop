@@ -25,8 +25,8 @@
   </head>
   <body>
     <!-- NAV & HERO -->
-    <section class="w-full flex flex-center">
-      <div class="w-full background-img">
+    <section>
+      <div class="hero-background">
         <img
           src="./assets/images/Clip path group.png"
           alt="Background Dashed Line"
@@ -50,38 +50,30 @@
             </div>
 
             <div class="nav__links-container">
-              <button>home <i class="fa-solid fa-angle-down ml-5"></i></button>
-              <button>
-                about us <i class="fa-solid fa-angle-down ml-5"></i>
-              </button>
-              <button>
-                services <i class="fa-solid fa-angle-down ml-5"></i>
-              </button>
-              <button>
-                projects <i class="fa-solid fa-angle-down ml-5"></i>
-              </button>
-              <button>blog <i class="fa-solid fa-angle-down ml-5"></i></button>
-              <button>page <i class="fa-solid fa-angle-down ml-5"></i></button>
-              <button>
-                contact <i class="fa-solid fa-angle-down ml-5"></i>
-              </button>
+              <button>home <i class="fa-solid fa-angle-down"></i></button>
+              <button>about us <i class="fa-solid fa-angle-down"></i></button>
+              <button>services <i class="fa-solid fa-angle-down"></i></button>
+              <button>projects <i class="fa-solid fa-angle-down"></i></button>
+              <button>blog <i class="fa-solid fa-angle-down"></i></button>
+              <button>page <i class="fa-solid fa-angle-down"></i></button>
+              <button>contact <i class="fa-solid fa-angle-down"></i></button>
             </div>
 
             <div>
               <button class="btn">
                 get an appointment
-                <i class="fa-solid fa-arrow-right white ml-10 size-16"></i>
+                <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </nav>
         </header>
 
         <!-- HERO -->
-        <hero class="flex flex-between">
-          <div class="hero__text__container section-heading">
-            <p class="flex-center flex">
+        <hero>
+          <div class="section-heading">
+            <p>
               relax travel
-              <span class="icon ml-10">
+              <span class="icon">
                 <span class="icon-squiggly-arrow"></span>
               </span>
             </p>
@@ -89,25 +81,24 @@
             <button class="btn btn--transparent">
               contact us
               <span>
-                <i class="fa-solid fa-arrow-right ml-10 size-16"></i>
+                <i class="fa-solid fa-arrow-right"></i>
               </span>
             </button>
           </div>
 
           <!-- IMAGE -->
-          <div class="hero__img__container">
+          <div class="hero-img-container">
             <img
               src="./assets/images/Rectangle 5681.png"
               alt="Traveling Girl"
               title="Traveling Girl"
-              class="abs"
             />
 
             <!-- COUNTRY CARDS -->
             <div class="hero__cards-container">
               <!-- GERMANY -->
               <div>
-                <div class="country-card">
+                <div class="card card--xs card--white">
                   <div>
                     <img
                       src="./assets/images/Germany.png"
@@ -121,7 +112,7 @@
 
               <!-- SOUTH KOREA -->
               <div>
-                <div class="country-card">
+                <div class="card card--xs card--white">
                   <div>
                     <img
                       src="./assets/images/South Korea.png"
@@ -135,7 +126,7 @@
 
               <!-- SOUTH AFRICA -->
               <div>
-                <div class="country-card">
+                <div class="card card--xs card--white">
                   <div>
                     <img
                       src="./assets/images/South Africa.png"
@@ -149,7 +140,7 @@
 
               <!-- TURKEY -->
               <div>
-                <div class="country-card">
+                <div class="card card--xs card--white">
                   <div>
                     <img
                       src="./assets/images/Turkey.png"
@@ -163,7 +154,7 @@
 
               <!-- INDONESIA -->
               <div>
-                <div class="country-card">
+                <div class="card card--xs card--white">
                   <div>
                     <img
                       src="./assets/images/Indonesia.png"
@@ -180,7 +171,7 @@
       </div>
     </section>
 
-    <main class="w-full">
+    <main>
       <!-- WHY CHOOSE US -->
       <!-- ABOUT -->
       <section class="choose-us">
@@ -200,15 +191,13 @@
 
           <div class="w-630">
             <div class="section-heading">
-              <p class="section-sm-h flex-center flex">
+              <p>
                 why choose us
-                <span class="icon ml-10">
+                <span class="icon">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
               </p>
-              <h2 class="section-lg-h">
-                Experiencing Traditions Cultural Immersion
-              </h2>
+              <h2>Experiencing Traditions Cultural Immersion</h2>
             </div>
 
             <ul class="mt-30">
@@ -237,10 +226,10 @@
             <div class="flex flex-center flex-start mt-40">
               <button class="btn">
                 Read More
-                <i class="fa-solid fa-arrow-right white ml-10 size-16"></i>
+                <i class="fa-solid fa-arrow-right white"></i>
               </button>
               <button class="btn btn--circle ml-30">
-                <i class="fa-solid fa-phone white size-16"></i>
+                <i class="fa-solid fa-phone"></i>
               </button>
               <span class="ml-15">
                 <p class="grey">Need help?</p>
@@ -252,158 +241,132 @@
       </section>
 
       <!-- COACHING SUPPORT -->
-      <section class="container-lg coaching-support">
-        <div class="coaching-support-container container">
-          <div class="coaching-support-content">
-            <div class="section-header-center w-630 section-heading">
-              <p class="section-sm-h flex-center flex">
-                <span class="icon mr-10 mirror">
+      <section class="container--lg coaching-support">
+        <div class="container">
+          <div>
+            <div class="section-heading">
+              <p>
+                <span class="icon mirror">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
                 coaching support
-                <span class="icon ml-10">
+                <span class="icon">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
               </p>
 
-              <h2 class="section-lg-h w-630 text-center">
-                Nature's Playground Exploring the Great
-              </h2>
+              <h2>Nature's Playground Exploring the Great</h2>
             </div>
 
-            <div class="coaching-support-list flex-wrap mt-30">
-              <article class="coaching-support-card flex mt-30">
+            <div>
+              <article class="card card--img-left">
                 <div>
                   <img src="./assets/images/coaching 1.png" alt="" />
                 </div>
-                <div class="ml-20 mt-40">
-                  <h6 class="size-18 semi-bold">Dualungo Coaching</h6>
-                  <p class="grey mt-20">
-                    There are many variati of passages of engineer
-                  </p>
+                <div>
+                  <h5>Dualungo Coaching</h5>
+                  <p>There are many variati of passages of engineer</p>
 
-                  <div class="mt-30">
+                  <div>
                     <a href="">
-                      <span class="light-blue semi-bold mt-30">
+                      <span>
                         Read More
-                        <i
-                          class="fa-solid fa-arrow-right ml-10 size-16 light-blue up-right"
-                        ></i>
+                        <i class="fa-solid fa-arrow-right up-right"></i>
                       </span>
                     </a>
                   </div>
                 </div>
               </article>
 
-              <article class="coaching-support-card flex mt-30">
+              <article class="card card--img-left">
                 <div>
                   <img src="./assets/images/coaching 2.png" alt="" />
                 </div>
-                <div class="ml-20 mt-40">
-                  <h6 class="size-18 semi-bold">IELTS Coaching</h6>
-                  <p class="grey mt-20">
-                    There are many variati of passages of engineer
-                  </p>
+                <div>
+                  <h5>IELTS Coaching</h5>
+                  <p>There are many variati of passages of engineer</p>
 
-                  <div class="mt-30">
+                  <div>
                     <a href="">
-                      <span class="light-blue semi-bold mt-30">
+                      <span>
                         Read More
-                        <i
-                          class="fa-solid fa-arrow-right ml-10 size-16 light-blue up-right"
-                        ></i>
+                        <i class="fa-solid fa-arrow-right up-right"></i>
                       </span>
                     </a>
                   </div>
                 </div>
               </article>
 
-              <article class="coaching-support-card flex mt-30">
+              <article class="card card--img-left">
                 <div>
                   <img src="./assets/images/coaching 3.png" alt="" />
                 </div>
-                <div class="ml-20 mt-40">
-                  <h6 class="size-18 semi-bold">TOFEL Coaching</h6>
-                  <p class="grey mt-20">
-                    There are many variati of passages of engineer
-                  </p>
+                <div>
+                  <h5>TOFEL Coaching</h5>
+                  <p>There are many variati of passages of engineer</p>
 
-                  <div class="mt-30">
+                  <div>
                     <a href="">
-                      <span class="light-blue semi-bold mt-30">
+                      <span>
                         Read More
-                        <i
-                          class="fa-solid fa-arrow-right ml-10 size-16 light-blue up-right"
-                        ></i>
+                        <i class="fa-solid fa-arrow-right up-right"></i>
                       </span>
                     </a>
                   </div>
                 </div>
               </article>
 
-              <article class="coaching-support-card flex mt-30">
+              <article class="card card--img-left">
                 <div>
                   <img src="./assets/images/coaching 4.png" alt="" />
                 </div>
-                <div class="ml-20 mt-40">
-                  <h6 class="size-18 semi-bold">IELTS Coaching</h6>
-                  <p class="grey mt-20">
-                    There are many variati of passages of engineer
-                  </p>
+                <div>
+                  <h5>IELTS Coaching</h5>
+                  <p>There are many variati of passages of engineer</p>
 
-                  <div class="mt-30">
+                  <div>
                     <a href="">
-                      <span class="light-blue semi-bold mt-30">
+                      <span>
                         Read More
-                        <i
-                          class="fa-solid fa-arrow-right ml-10 size-16 light-blue up-right"
-                        ></i>
+                        <i class="fa-solid fa-arrow-right up-right"></i>
                       </span>
                     </a>
                   </div>
                 </div>
               </article>
 
-              <article class="coaching-support-card flex mt-30">
+              <article class="card card--img-left">
                 <div>
                   <img src="./assets/images/coaching 5.png" alt="" />
                 </div>
-                <div class="ml-20 mt-40">
-                  <h6 class="size-18 semi-bold">OET Coaching</h6>
-                  <p class="grey mt-20">
-                    There are many variati of passages of engineer
-                  </p>
+                <div>
+                  <h5>OET Coaching</h5>
+                  <p>There are many variati of passages of engineer</p>
 
-                  <div class="mt-30">
+                  <div>
                     <a href="">
-                      <span class="light-blue semi-bold mt-30">
+                      <span>
                         Read More
-                        <i
-                          class="fa-solid fa-arrow-right ml-10 size-16 light-blue up-right"
-                        ></i>
+                        <i class="fa-solid fa-arrow-right up-right"></i>
                       </span>
                     </a>
                   </div>
                 </div>
               </article>
 
-              <article class="coaching-support-card flex mt-30">
+              <article class="card card--img-left">
                 <div>
                   <img src="./assets/images/coaching 6.png" alt="" />
                 </div>
-                <div class="ml-20 mt-40">
-                  <h6 class="size-18 semi-bold">Language Coaching</h6>
-                  <p class="grey mt-20">
-                    There are many variati of passages of engineer
-                  </p>
+                <div>
+                  <h5>Language Coaching</h5>
+                  <p>There are many variati of passages of engineer</p>
 
-                  <div class="mt-30">
+                  <div>
                     <a href="">
-                      <span class="light-blue semi-bold mt-30">
+                      <span>
                         Read More
-                        <i
-                          class="fa-solid fa-arrow-right ml-10 size-16 light-blue up-right"
-                        ></i>
+                        <i class="fa-solid fa-arrow-right up-right"></i>
                       </span>
                     </a>
                   </div>
@@ -412,10 +375,10 @@
             </div>
           </div>
 
-          <div class="coaching-all-courses mt-80">
-            <span class="line"></span>
+          <div>
+            <div class="line"></div>
             <button class="btn">all courses</button>
-            <span class="line"></span>
+            <div class="line"></div>
           </div>
         </div>
       </section>
@@ -423,68 +386,66 @@
       <!-- AVAILABLE COUNTRIES -->
       <section class="available-countries">
         <div class="container">
-          <div class="flex flex-between items-end">
-            <div class="w-630 section-heading">
-              <p class="section-sm-h flex-start flex">
+          <div class="section-heading-container">
+            <div class="section-heading">
+              <p>
                 available countries
-                <span class="icon ml-10">
+                <span class="icon">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
               </p>
-              <h2 class="section-lg-h">
-                Urban Escapes City Hopping Adventures
-              </h2>
+              <h2>Urban Escapes City Hopping Adventures</h2>
             </div>
             <button class="btn">
               View More
-              <i class="fa-solid fa-arrow-right white ml-10 size-16"></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
 
-          <div class="country-cards-container">
-            <div class="country-card">
+          <div class="card-fill-container">
+            <div class="card card--white">
               <div>
                 <img src="./assets//images/Canada.png" alt="Canada" />
               </div>
 
-              <h5 class="mt-20 size-22 bold">Canada</h5>
+              <h5>Canada</h5>
 
-              <ul class="mt-20">
+              <ul class="list--check">
                 <li>Mistakes To Avoid</li>
                 <li>Your Startup</li>
                 <li>Knew About Fonts</li>
               </ul>
             </div>
 
-            <div class="country-card">
+            <div class="card card--white">
               <div>
                 <img src="./assets//images/Bangladesh.png" alt="Bangladesh" />
               </div>
 
-              <h5 class="mt-20 size-22 bold">Bangladesh</h5>
+              <h5>Bangladesh</h5>
 
-              <ul class="mt-20">
+              <ul class="list--check">
                 <li>Mistakes To Avoid</li>
                 <li>Your Startup</li>
                 <li>Knew About Fonts</li>
               </ul>
             </div>
 
-            <div class="country-card">
+            <div class="card card--white">
               <div>
                 <img src="./assets/images/Australia.png" alt="Australia" />
               </div>
 
-              <h5 class="mt-20 size-22 bold">Australia</h5>
+              <h5>Australia</h5>
 
-              <ul class="mt-20">
+              <ul class="list--check">
                 <li>Mistakes To Avoid</li>
                 <li>Your Startup</li>
                 <li>Knew About Fonts</li>
               </ul>
             </div>
 
-            <div class="country-card">
+            <div class="card card--white">
               <div>
                 <img
                   src="./assets/images/United Kingdom.png"
@@ -492,9 +453,9 @@
                 />
               </div>
 
-              <h5 class="mt-20 size-22 bold">United Kingdom</h5>
+              <h5>United Kingdom</h5>
 
-              <ul class="mt-20">
+              <ul class="list--check">
                 <li>Mistakes To Avoid</li>
                 <li>Your Startup</li>
                 <li>Knew About Fonts</li>
@@ -507,158 +468,157 @@
       <!-- TICKET BOOKING -->
       <section class="ticket-booking">
         <div class="container">
-          <div class="gradient-background">
-            <div class="w-540">
-              <div class="w-540 section-heading">
-                <p class="section-sm-h flex-center flex">
-                  <span class="icon mr-10 mirror">
-                    <span class="icon-squiggly-arrow-white"></span>
-                  </span>
-                  ticket booking
-                  <span class="icon ml-10">
-                    <span class="icon-squiggly-arrow-white"></span>
-                  </span>
-                </p>
-                <h2 class="section-lg-h">
-                  Wanderlust Chronicles Tales from Around
-                </h2>
-              </div>
-
-              <div class="mt-30 flex-center flex-between flex flex-column">
-                <div class="flex w-full">
-                  <div class="input-container">
-                    <label for="ticket-from"> from </label>
-                    <div class="rounded-input rounded-input-2 mt-10">
-                      <span class="icon-up-plane size-30"></span>
-                      <select
-                        name="ticket-from"
-                        id="ticket-from"
-                        class="size-20"
-                      >
-                        <option value="Dhaka">Dhaka</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="input-container ml-20">
-                    <label for="ticket-to"> to </label>
-                    <div class="rounded-input rounded-input-2 mt-10">
-                      <span class="icon-up-plane size-30 down-right"></span>
-                      <select name="ticket-to" id="ticket-to" class="size-20">
-                        <option value="Canada">Canada</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex w-full mt-20">
-                  <div class="input-container">
-                    <label for="ticket-date"> date </label>
-                    <div class="rounded-input rounded-input-2 mt-10">
-                      <span class="icon-calendar size-30"></span>
-                      <select
-                        name="ticket-date"
-                        id="ticket-date"
-                        class="size-20"
-                      >
-                        <option value="03/22/23">03/22/23</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="input-container ml-20">
-                    <label for="ticket-passenger"> passenger </label>
-                    <div class="rounded-input rounded-input-2 mt-10">
-                      <span class="minus"></span>
-                      <input
-                        name="ticket-passenger"
-                        id="ticket-passenger"
-                        type="number"
-                        value="03"
-                        class="size-20"
-                      />
-                      <span class="icon-plus size-30"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <button class="btn w-full mt-20">book now</button>
+          <div class="w-540">
+            <div class="section-heading">
+              <p>
+                <span class="icon mirror">
+                  <span class="icon-squiggly-arrow-white"></span>
+                </span>
+                ticket booking
+                <span class="icon">
+                  <span class="icon-squiggly-arrow-white"></span>
+                </span>
+              </p>
+              <h2>Wanderlust Chronicles Tales from Around</h2>
             </div>
+
+            <!-- !here -->
+            <div class="mt-30 flex-center flex-between flex flex-column">
+              <div class="flex w-full">
+                <div class="input-container">
+                  <label for="ticket-from"> from </label>
+                  <div class="text-input text-input--2-icon">
+                    <span class="icon-up-plane size-30"></span>
+                    <select name="ticket-from" id="ticket-from" class="size-20">
+                      <option value="Dhaka">Dhaka</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="input-container ml-20">
+                  <label for="ticket-to"> to </label>
+                  <div class="text-input text-input--2-icon">
+                    <span class="icon-up-plane size-30 down-right"></span>
+                    <select name="ticket-to" id="ticket-to" class="size-20">
+                      <option value="Canada">Canada</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex w-full mt-20">
+                <div class="input-container">
+                  <label for="ticket-date"> date </label>
+                  <div class="text-input text-input--2-icon">
+                    <span class="icon-calendar size-30"></span>
+                    <select name="ticket-date" id="ticket-date" class="size-20">
+                      <option value="03/22/23">03/22/23</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="input-container ml-20">
+                  <label for="ticket-passenger"> passenger </label>
+                  <div class="text-input text-input--2-icon">
+                    <span class="minus"></span>
+                    <input
+                      name="ticket-passenger"
+                      id="ticket-passenger"
+                      type="number"
+                      value="03"
+                      class="size-20"
+                    />
+                    <span class="icon-plus size-30"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn w-full mt-20">book now</button>
           </div>
         </div>
       </section>
 
       <!-- ASK QUESTION -->
       <section class="ask-question">
-        <div class="flex flex-center flex-between container">
-          <!-- form -->
-          <div class="flex flex-column flex-wrap h-640">
-            <div class="">
+        <div class="section-row container">
+          <div class="collage-container">
+            <div>
               <img
                 src="./assets/images/couple traveling 1.png"
-                alt=""
+                alt="couple traveling"
                 width="300"
               />
             </div>
-            <div class="daily-activity-container mt-30 flex">
-              <div class="btn--circle bg-light-blue flex flex-center">
-                <span class="icon-earth-plane size-40"></span>
+            <div class="card card--white card--border-lg">
+              <div class="btn btn--circle">
+                <span class="icon-earth-plane"></span>
               </div>
-              <span class="ml-20">
-                <h5 class="size-18 semi-bold">Daily Activity</h5>
-                <p class="mt-5 grey size-16">Loream is ispam</p>
-              </span>
+              <div>
+                <h5>Daily Activity</h5>
+                <p>Loream is ispam</p>
+              </div>
             </div>
-            <div class="ml-30">
-              <img src="./assets/images/girl studying.png" alt="" width="270" />
+            <div>
+              <img
+                src="./assets/images/girl studying.png"
+                alt="girl studying"
+                width="270"
+              />
             </div>
-            <div class="ml-30 mt-20">
+            <div>
               <img
                 src="./assets/images/couple traveling 2.png"
-                alt=""
+                alt="couple traveling"
                 width="270"
               />
             </div>
           </div>
 
           <div>
-            <div class="w-630 section-heading">
-              <p class="section-sm-h flex-center flex">
+            <div class="section-heading">
+              <p>
                 ask question
-                <span class="icon ml-10">
+                <span class="icon">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
               </p>
-              <h2 class="section-lg-h">
-                Wanderlust Chronicles Tales from Around
-              </h2>
+              <h2>Wanderlust Chronicles Tales from Around</h2>
             </div>
 
-            <div class="w-630">
-              <details class="card mt-40">
-                <summary class="size-18 semi-bold">
+            <div>
+              <details class="card card--hover">
+                <summary class="angle">
                   What services do we offer?
+                  <div>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
                 </summary>
-                <p class="grey mt-10">
+                <p>
                   Lorem Ipsum is simply dummy text the printing and typese Lorem
                   Ipsum has been the industry's standard dummy text ever
                 </p>
               </details>
-              <details class="card mt-30">
-                <summary class="size-18 semi-bold">
+              <details class="card card--hover">
+                <summary class="angle">
                   How long does it take for you to complete a project?
+                  <div>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
                 </summary>
-                <p class="grey mt-10">
+                <p>
                   Lorem Ipsum is simply dummy text the printing and typese Lorem
                   Ipsum has been the industry's standard dummy text ever
                 </p>
               </details>
-              <details class="card mt-30">
-                <summary class="size-18 semi-bold">
+              <details class="card card--hover">
+                <summary class="angle">
                   How much does it cost to work with your agency?
+                  <div>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
                 </summary>
-                <p class="grey mt-10">
+                <p>
                   Lorem Ipsum is simply dummy text the printing and typese Lorem
                   Ipsum has been the industry's standard dummy text ever
                 </p>
@@ -678,87 +638,83 @@
       </div>
 
       <!-- VISA CATEGORY -->
-      <section class="flex flex-column flex-center">
+      <section class="visa-category">
         <div class="container">
-          <div class="flex flex-between items-end">
-            <div class="w-630 section-heading">
-              <p class="section-sm-h flex-start flex size-">
+          <div class="section-heading-container">
+            <div class="section-heading">
+              <p>
                 visa category
-                <span class="icon ml-10">
+                <span class="icon">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
               </p>
-              <h2 class="section-lg-h">Path Less Traveled Off</h2>
+              <h2>Path Less Traveled Off</h2>
             </div>
             <button class="btn">
               All Category
-              <i class="fa-solid fa-arrow-right white ml-10 size-16"></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
 
-          <div class="flex flex-wrap mt-60 flex-between">
-            <div class="grid-4 w-870">
-              <article class="card w-350 h-255 border-hover-light-blue">
-                <span>
-                  <span class="icon-hand-bag size-50"></span>
-                </span>
+          <div>
+            <article class="card card--hover">
+              <div>
+                <span class="icon-hand-bag"></span>
+              </div>
 
-                <h6 class="grey mt-30 size-14 semi-bold">VISA</h6>
+              <h6>VISA</h6>
 
-                <h5 class="semi-bold size-30 mt-10">student visa</h5>
+              <h4>student visa</h4>
 
-                <p class="grey mt-20 lh-30">
-                  Lorem Ipsum is simply dummy text the printing and typese Lorem
-                  Ipsum
-                </p>
-              </article>
-              <article class="card w-350 h-255 border-hover-light-blue">
-                <span>
-                  <span class="icon-gps size-50"></span>
-                </span>
+              <p>
+                Lorem Ipsum is simply dummy text the printing and typese Lorem
+                Ipsum
+              </p>
+            </article>
+            <article class="card card--hover">
+              <div>
+                <span class="icon-gps"></span>
+              </div>
 
-                <h6 class="grey mt-30 size-14 semi-bold">VISA</h6>
+              <h6>VISA</h6>
 
-                <h5 class="semi-bold size-30 mt-10">tourist visa</h5>
+              <h4>tourist visa</h4>
 
-                <p class="grey mt-20 lh-30">
-                  Lorem Ipsum is simply dummy text the printing and typese Lorem
-                  Ipsum
-                </p>
-              </article>
-              <article class="card w-350 h-255 border-hover-light-blue">
-                <span>
-                  <span class="icon-airport size-50"></span>
-                </span>
+              <p>
+                Lorem Ipsum is simply dummy text the printing and typese Lorem
+                Ipsum
+              </p>
+            </article>
+            <article class="card card--hover">
+              <div>
+                <span class="icon-airport"></span>
+              </div>
 
-                <h6 class="grey mt-30 size-14 semi-bold">VISA</h6>
+              <h6>VISA</h6>
 
-                <h5 class="semi-bold size-30 mt-10">working visa</h5>
+              <h4>working visa</h4>
 
-                <p class="grey mt-20 lh-30">
-                  Lorem Ipsum is simply dummy text the printing and typese Lorem
-                  Ipsum
-                </p>
-              </article>
-              <article class="card w-350 h-255 border-hover-light-blue">
-                <span>
-                  <span class="icon-radio-plane size-50"></span>
-                </span>
+              <p>
+                Lorem Ipsum is simply dummy text the printing and typese Lorem
+                Ipsum
+              </p>
+            </article>
+            <article class="card card--hover">
+              <div>
+                <span class="icon-radio-plane"></span>
+              </div>
 
-                <h6 class="grey mt-30 size-14 semi-bold">VISA</h6>
+              <h6>VISA</h6>
 
-                <h5 class="semi-bold size-30 mt-10">business visa</h5>
+              <h4>business visa</h4>
 
-                <p class="grey mt-20 lh-30">
-                  Lorem Ipsum is simply dummy text the printing and typese Lorem
-                  Ipsum
-                </p>
-              </article>
-            </div>
+              <p>
+                Lorem Ipsum is simply dummy text the printing and typese Lorem
+                Ipsum
+              </p>
+            </article>
 
-            <div>
-              <img src="./assets/images/big ben.png" alt="" />
-            </div>
+            <img src="./assets/images/big ben.png" alt="" />
           </div>
         </div>
       </section>
@@ -772,7 +728,9 @@
           <div class="relative">
             <div class="quote-offset">
               <div class="card bg-white flex flex-column w-630 p-60">
-                <div>{quote icon}</div>
+                <div>
+                  <img src="./assets/images/quote.png" alt="" />
+                </div>
                 <div class="mt-20">
                   <p class="grey lh-50 size-30">
                     Leverage agile frameworks to provide is go a robust synopsis
@@ -834,74 +792,66 @@
       </div>
 
       <!-- PROCESS OVERVIEW -->
-      <section class="container-lg background-img z-1">
-        <div class="coaching-support-container container">
-          <div class="coaching-support-content w-full">
-            <div class="section-header-center w-630 section-heading">
-              <p class="section-sm-h flex-center flex">
-                <span class="icon mr-10 mirror">
+      <section class="container--lg process-overview">
+        <div class="container">
+          <div>
+            <div class="section-heading">
+              <p>
+                <span class="icon mirror">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
                 process overview
-                <span class="icon ml-10">
+                <span>
                   <span class="icon-squiggly-arrow"></span>
                 </span>
               </p>
 
-              <h2 class="section-lg-h w-630 text-center">
-                Where Wanderlust Meets Reality Destinations
-              </h2>
+              <h2>Where Wanderlust Meets Reality Destinations</h2>
             </div>
 
-            <div class="coaching-support-list mt-30 z-2 w-full">
-              <article
-                class="card border-box w-350 bg-white relative p-40 pl-70 flex flex-column mt-30"
-              >
-                <div class="process-icon">
-                  <span class="icon-shield size-45"></span>
-                </div>
+            <div class="card-fill-container">
+              <article>
                 <div>
-                  <p class="grey semi-bold size-18">01</p>
+                  <div>
+                    <span class="icon-shield"></span>
+                  </div>
                 </div>
-                <div class="mt-5">
-                  <h5 class="size-22 bold">Efficiency Experts</h5>
-                  <p class="grey mt-20">
+                <div class="card card--white">
+                  <p>01</p>
+                  <h5>Efficiency Experts</h5>
+                  <p>
                     Lorem Ipsum is simply dummy text th printing and typese
                     Lorem Ipm been the industry's standard
                   </p>
                 </div>
               </article>
 
-              <article
-                class="card w-350 border-box bg-white relative p-40 pl-70 flex flex-column mt-30 ml-70"
-              >
-                <div class="process-icon">
-                  <span class="icon-stats size-45"></span>
-                </div>
+              <article>
                 <div>
-                  <p class="grey semi-bold size-18">02</p>
+                  <div>
+                    <span class="icon-stats"></span>
+                  </div>
                 </div>
-                <div class="mt-5">
-                  <h5 class="size-22 bold">Efficiency Experts</h5>
-                  <p class="grey mt-20">
+                <div class="card card--white">
+                  <p>02</p>
+                  <h5>Global Entry</h5>
+                  <p>
                     Lorem Ipsum is simply dummy text th printing and typese
                     Lorem Ipm been the industry's standard
                   </p>
                 </div>
               </article>
 
-              <article
-                class="card w-350 border-box bg-white relative p-40 pl-70 flex flex-column mt-30 ml-70"
-              >
-                <div class="process-icon">
-                  <span class="icon-balance size-45"></span>
-                </div>
+              <article>
                 <div>
-                  <p class="grey semi-bold size-18">03</p>
+                  <div>
+                    <span class="icon-balance"></span>
+                  </div>
                 </div>
-                <div class="mt-5">
-                  <h5 class="size-22 bold">Efficiency Experts</h5>
-                  <p class="grey mt-20">
+                <div class="card card--white">
+                  <p>03</p>
+                  <h5>Passport Plus</h5>
+                  <p>
                     Lorem Ipsum is simply dummy text th printing and typese
                     Lorem Ipm been the industry's standard
                   </p>
@@ -913,68 +863,56 @@
       </section>
 
       <!-- SUCCESS STORY -->
-      <section>
-        <div class="relative container success-story">
-          <div
-            class="success-story-container container p-40 flex flex-center flex-between border-box"
-          >
-            <div class="w-510 section-heading">
-              <p class="section-sm-h flex-center flex white">
-                success story
-                <span class="icon ml-10">
-                  <span class="icon-squiggly-arrow-white"></span>
-                </span>
-              </p>
-              <h2 class="section-lg-h white">
-                Experiencing Traditions and Customs
-              </h2>
+      <section class="success-story">
+        <div class="container">
+          <div class="section-heading">
+            <p>
+              success story
+              <span class="icon">
+                <span class="icon-squiggly-arrow-white"></span>
+              </span>
+            </p>
+            <h2>Experiencing Traditions and Customs</h2>
 
-              <div class="mt-15">
-                <p class="white size-16 lh-30">
-                  Lorem Ipsum is simply dummy text the printing and typese Lorem
-                  Ipsum has been the industry's standardever
-                </p>
+            <div>
+              <p>
+                Lorem Ipsum is simply dummy text the printing and typese Lorem
+                Ipsum has been the industry's standardever
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <div><span class="icon-members"></span></div>
+              <div>
+                <h3>200+</h3>
+                <p>Team member</p>
+              </div>
+            </div>
+            <div class="card">
+              <div><span class="icon-award"></span></div>
+              <div>
+                <h3>20+</h3>
+                <p>Winning award</p>
               </div>
             </div>
 
-            <div class="grid-4 w-630">
-              <div class="card flex flex-center">
-                <span class="icon-container white"
-                  ><span class="icon-members size-30"></span
-                ></span>
-                <span class="flex flex-column ml-20">
-                  <h5 class="white size-50 bold">200+</h5>
-                  <p class="white size-16">Team member</p>
-                </span>
+            <div class="card">
+              <div>
+                <span class="icon-project"></span>
               </div>
-              <div class="card flex flex-center">
-                <span class="icon-container white"
-                  ><span class="icon-award size-30"></span
-                ></span>
-                <span class="flex flex-column ml-20">
-                  <h5 class="white size-50 bold">20+</h5>
-                  <p class="white size-16">Winning award</p>
-                </span>
+              <div>
+                <h3>10k+</h3>
+                <p>Complete project</p>
               </div>
+            </div>
 
-              <div class="card flex flex-center">
-                <span class="icon-container white"
-                  ><span class="icon-project size-30"></span
-                ></span>
-                <span class="flex flex-column ml-20">
-                  <h5 class="white size-50 bold">10k+</h5>
-                  <p class="white size-16">Complete project</p>
-                </span>
-              </div>
-
-              <div class="card flex flex-center">
-                <span class="icon-container white"
-                  ><span class="icon-client size-30"></span
-                ></span>
-                <span class="flex flex-column ml-20">
-                  <h5 class="white size-50 bold">900+</h5>
-                  <p class="white size-16">Client review</p>
-                </span>
+            <div class="card">
+              <div><span class="icon-client"></span></div>
+              <div>
+                <h3>900+</h3>
+                <p>Client review</p>
               </div>
             </div>
           </div>
@@ -990,7 +928,7 @@
               <div class="flex flex-between w-full">
                 <div class="input-container">
                   <label for="message-email">Your Email</label>
-                  <div class="rounded-input rounded-input-1">
+                  <div class="text-input text-input--1-icon">
                     <input
                       id="message-email"
                       name="message-email"
@@ -1003,7 +941,7 @@
 
                 <div class="input-container">
                   <label for="message-phone">Your Phone</label>
-                  <div class="rounded-input rounded-input-1">
+                  <div class="text-input text-input--1-icon">
                     <input
                       id="message-phone"
                       name="message-phone"
@@ -1017,7 +955,7 @@
 
               <div class="input-container w-full mt-20">
                 <label for="message-address">Your Address</label>
-                <div class="rounded-input rounded-input-1 w-full">
+                <div class="text-input text-input--1-icon w-full">
                   <input
                     id="message-address"
                     name="message-address"
@@ -1031,7 +969,7 @@
               <div class="input-container mt-20 w-full">
                 <label for="message-message">Message</label>
                 <div
-                  class="rounded-input rounded-input-1 w-full h-130 items-start"
+                  class="text-input text-input--1-icon w-full h-130 items-start"
                 >
                   <textarea
                     id="message-message"
@@ -1053,9 +991,9 @@
 
           <div class="w-570">
             <div class="w-630 section-heading">
-              <p class="section-sm-h flex-center flex">
+              <p>
                 MESSAGE US
-                <span class="icon ml-10">
+                <span class="icon">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
               </p>
@@ -1107,159 +1045,127 @@
       </section>
 
       <!-- RECENT BLOGS -->
-      <section>
+      <section class="recent-blogs">
         <div class="container">
-          <div class="flex flex-between items-end">
+          <div class="section-heading-container">
             <div class="w-630 section-heading">
-              <p class="section-sm-h flex-start flex">
+              <p>
                 recent blogs
-                <span class="icon ml-10">
+                <span class="icon">
                   <span class="icon-squiggly-arrow"></span>
                 </span>
               </p>
-              <h2 class="section-lg-h">
-                Adventure Thrills and Excitement Await
-              </h2>
+              <h2>Adventure Thrills and Excitement Await</h2>
             </div>
             <button class="btn">
               All Blogs
-              <i class="fa-solid fa-arrow-right white ml-10 size-16"></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
 
-          <div class="mt-60 flex flex-between">
-            <div class="bg-white w-630 card no-border no-padding">
-              <div class="mt-20">
-                <img src="./assets/images/couple traveling 3.png" alt="" />
-              </div>
+          <div>
+            <div class="card card--img-top">
+              <img src="./assets/images/couple traveling 3.png" alt="" />
 
-              <div class="card pt-0 p-40 no-border">
-                <div class="flex">
-                  <span class="flex">
-                    <span
-                      ><i class="fa-regular fa-calendar-days light-blue"></i
-                    ></span>
-                    <p class="grey size-16 ml-10">October 19, 2022</p>
-                  </span>
+              <div>
+                <div class="card-date">
+                  <h6>
+                    <span><i class="fa-regular fa-calendar-days"></i></span>
+                    October 19, 2022
+                  </h6>
 
-                  <span class="flex ml-60">
-                    <span><i class="fa-regular fa-user light-blue"></i></span>
-                    <p class="grey size-16 ml-10">By admin</p>
-                  </span>
+                  <h6>
+                    <span><i class="fa-regular fa-user"></i></span>
+                    By admin
+                  </h6>
                 </div>
 
-                <div class="mt-30 w-550">
-                  <h4 class="size-22 bold">
-                    Cultural Encounters and Connections Cruise Booking and
-                    Packages
-                  </h4>
+                <h4>
+                  Cultural Encounters and Connections Cruise Booking and
+                  Packages
+                </h4>
 
-                  <p class="grey size-16 lh-30 mt-30">
-                    Lorem Ipsum is simply dummy text the printing and typese
-                    Destina tion Weddings and Honeymoon Packages Lorem Ipsum has
-                    been
-                  </p>
+                <p>
+                  Lorem Ipsum is simply dummy text the printing and typese
+                  Destina tion Weddings and Honeymoon Packages Lorem Ipsum has
+                  been
+                </p>
 
-                  <div class="mt-30">
-                    <a href="">
-                      <div>
-                        <span class="semi-bold"> Read More </span>
-                        <span>
-                          <i
-                            class="fa-solid fa-arrow-right light-blue ml-10 size-16"
-                          ></i>
-                        </span>
-                      </div>
-                    </a>
-                  </div>
+                <div>
+                  <a href=""
+                    >Read More
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <div class="flex flex-column flex-between">
-              <div class="bg-white w-630 card no-border no-padding flex">
-                <img src="./assets/images/couple traveling 4.png" alt="" />
+            <div class="card card--img-left card--with-date">
+              <img src="./assets/images/couple traveling 4.png" alt="" />
 
-                <div class="card no-border">
-                  <div class="flex">
-                    <span class="flex">
-                      <span
-                        ><i class="fa-regular fa-calendar-days grey"></i
-                      ></span>
-                      <p class="grey size-16 ml-10">October 19, 2022</p>
+              <div>
+                <div class="card-date">
+                  <h6>
+                    <span><i class="fa-regular fa-calendar-days"></i></span>
+                    October 19, 2022
+                  </h6>
+
+                  <h6>
+                    <span><i class="fa-regular fa-user"></i></span>
+                    By admin
+                  </h6>
+                </div>
+
+                <h4>Remote Destinations and Hideaways</h4>
+
+                <p>
+                  Lorem Ipsum is simply dummy text the printing an typese
+                  Destina tion Weddings Honeym
+                </p>
+
+                <div>
+                  <a href="">
+                    Read More
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
                     </span>
-
-                    <span class="flex ml-30">
-                      <span><i class="fa-regular fa-user grey"></i></span>
-                      <p class="grey size-16 ml-10">By admin</p>
-                    </span>
-                  </div>
-
-                  <div class="mt-10">
-                    <h4 class="size-22 bold">
-                      Remote Destinations and Hideaways
-                    </h4>
-
-                    <p class="grey size-16 lh-30 mt-20">
-                      Lorem Ipsum is simply dummy text the printing an typese
-                      Destina tion Weddings Honeym
-                    </p>
-
-                    <div class="mt-20">
-                      <a href="">
-                        <div>
-                          <span class="semi-bold"> Read More </span>
-                          <span>
-                            <i
-                              class="fa-solid fa-arrow-right ml-10 size-16"
-                            ></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
+            </div>
 
-              <div class="bg-white w-630 card no-border no-padding flex">
-                <img src="./assets/images/couple traveling 5.png" alt="" />
+            <div class="card card--img-left card--with-date">
+              <img src="./assets/images/couple traveling 5.png" alt="" />
 
-                <div class="card no-border">
-                  <div class="flex">
-                    <span class="flex">
-                      <span
-                        ><i class="fa-regular fa-calendar-days grey"></i
-                      ></span>
-                      <p class="grey size-16 ml-10">October 19, 2022</p>
+              <div>
+                <div class="card-date">
+                  <h6>
+                    <span><i class="fa-regular fa-calendar-days"></i></span>
+                    October 19, 2022
+                  </h6>
+
+                  <h6>
+                    <span><i class="fa-regular fa-user"></i></span>
+                    By admin
+                  </h6>
+                </div>
+
+                <h4>Hiking Through Nature's Beauty</h4>
+
+                <p>
+                  Lorem Ipsum is simply dummy text the printing an typese
+                  Destina tion Weddings Honeym
+                </p>
+
+                <div>
+                  <a href="">
+                    Read More
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
                     </span>
-
-                    <span class="flex ml-30">
-                      <span><i class="fa-regular fa-user grey"></i></span>
-                      <p class="grey size-16 ml-10">By admin</p>
-                    </span>
-                  </div>
-
-                  <div class="mt-10">
-                    <h4 class="size-22 bold">Hiking Through Nature's Beauty</h4>
-
-                    <p class="grey size-16 lh-30 mt-20">
-                      Lorem Ipsum is simply dummy text the printing an typese
-                      Destina tion Weddings Honeym
-                    </p>
-
-                    <div class="mt-20">
-                      <a href="">
-                        <div>
-                          <span class="semi-bold"> Read More </span>
-                          <span>
-                            <i
-                              class="fa-solid fa-arrow-right ml-10 size-16"
-                            ></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1302,8 +1208,8 @@
 
           <div class="lists">
             <div>
-              <h5 >useful links</h5>
-              <ul class="list list--angle">
+              <h5>useful links</h5>
+              <ul class="list--angle">
                 <li>latest news</li>
                 <li>careers</li>
                 <li>general inquires</li>
@@ -1312,7 +1218,7 @@
             </div>
             <div>
               <h5>service menu</h5>
-              <ul class="list list--check">
+              <ul class="list--check">
                 <li>mistakes to avoid</li>
                 <li>your startup</li>
                 <li>knew about fonts</li>
@@ -1321,7 +1227,7 @@
             </div>
             <div>
               <h5>latest news</h5>
-              <dl class="list list--calendar">
+              <dl class="list--calendar">
                 <dt>October 19, 2022</dt>
                 <dd>Market research helps the business understand</dd>
                 <dt>October 19, 2022</dt>
@@ -1329,7 +1235,7 @@
               </dl>
             </div>
             <div>
-              <h5 >subscribe our newsletter</h5>
+              <h5>subscribe our newsletter</h5>
               <div class="email-container">
                 <div>
                   <p>
@@ -1337,11 +1243,9 @@
                     it.
                   </p>
                 </div>
-                <div class="rounded-input rounded-input-1 no-padding mt-20">
+                <div class="text-input text-input--semi-transparent">
+                  <input type="email" placeholder="Your E-mail" />
                   <div>
-                    <input type="email" placeholder="Your E-mail" />
-                  </div>
-                  <div class="btn--circle bg-light-blue flex flex-center">
                     <i class="fa-solid fa-paper-plane"></i>
                   </div>
                 </div>
@@ -1351,7 +1255,7 @@
         </div>
       </div>
 
-      <div class="copyrights-terms container">
+      <div class="container">
         <div>&copy; Yoursitename 2024 | All Rights Reserved</div>
 
         <div>

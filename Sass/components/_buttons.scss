@@ -1,4 +1,6 @@
 .btn {
+  @include flex(center, center);
+  gap: 10px;
   font-weight: 600;
   font-size: 1rem;
   text-transform: capitalize;
@@ -8,6 +10,10 @@
   border:none;
   color: white;
   background-color: $light-blue;
+
+  i {
+    font-size: $font-16;
+  }
 }
 
 .btn--transparent {

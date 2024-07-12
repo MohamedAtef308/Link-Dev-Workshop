@@ -6,6 +6,8 @@
 
   // PARAGRAPH
   &>p {
+    @include flex(space-between,center);
+    gap: 10px;
     text-transform: uppercase;
     font-weight: $semi-bold;
     letter-spacing: 1.4px;
@@ -31,7 +33,8 @@
   }
 }
 
-.container-lg .section-heading{
+.container--lg .section-heading{
   width: 630px;
   @include flex(center, center, column);
+  text-align: center;
 }

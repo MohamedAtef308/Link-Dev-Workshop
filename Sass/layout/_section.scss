@@ -1,8 +1,247 @@
-// offset sections
+// OFFSETS
 section.coaching-support {
-    margin-top: section-margin-top-offset(160);
+  margin-top: section-margin-top-offset(160);
+
+  .container {
+    // CARDS CONTAINER
+    & > div:first-child {
+      gap: 60px;
+
+      & > div:nth-child(2) {
+        @include flex(space-between, center, row, wrap);
+        @include gap-width(30px, 3);
+        width: 100%;
+      }
+    }
+
+    & > div:last-child {
+      @include flex(space-between, center);
+      margin-top: 80px;
+      width: 100%;
+
+      div.line {
+        height: 1px;
+        width: 42.6%;
+        background-color: $grey-border;
+      }
+    }
+  }
 }
 
-section > div.success-story {
-    margin-top: section-margin-top-offset(-201);
+section.success-story > div.container {
+  @include flex(space-between);
+  gap: 50px;
+  position: relative;
+  margin-top: section-margin-top-offset(-201);
+  box-sizing: border-box;
+  padding: 40px;
+  padding-left: 60px;
+  background-color: var(--light-blue);
+  background-image: url("./assets/images/experience\ background.png");
+  background-repeat: no-repeat;
+
+  & * {
+    color: white;
+  }
+
+  & > div.section-heading {
+    width: 510px;
+    margin-top: 40px;
+
+    div {
+      margin-top: 15px;
+      font-size: $font-16;
+      line-height: 30px;
+    }
+  }
+
+  & > div:last-child {
+    @include grid();
+    gap: 30px;
+
+    .card {
+      @include flex(center, center);
+      gap: 20px;
+
+      p {
+        margin-top: 0;
+        font-size: $font-16;
+      }
+
+      h3 {
+        margin-top: -10px;
+        font: {
+          size: $font-50;
+          weight: bold;
+        }
+      }
+
+      & > div:first-child {
+        @include flex(center, center);
+        width: 64px;
+        height: 64px;
+        background: white;
+        border-radius: $round-full;
+        font-size: $font-30;
+      }
+    }
+  }
+}
+
+section div.quote-offset {
+  position: absolute;
+  left: -190px;
+  top: 112px;
+}
+
+// SECTION SPECIFIC STYLES
+section.ticket-booking > div.container {
+  padding: 71px 78px;
+  background-image: linear-gradient(
+    to right,
+    $dark-blue 0%,
+    $dark-blue 39%,
+    $dark-blue 39%,
+    $mid-grey 100%
+  );
+}
+
+section.container--lg > div > div:first-child {
+  @include flex(space-between, center, column);
+}
+
+section.visa-category > div.container > div:last-child {
+  @include grid(3, 2);
+  gap: 30px;
+
+  img {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+
+  .card {
+    & > div:first-child {
+      font-size: $font-50;
+    }
+
+    h6 {
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+  }
+}
+
+section.recent-blogs > div.container > div:last-child {
+  @include grid(2, 2);
+  gap: 30px;
+
+  & > div:first-child {
+    grid-row: span 2;
+  }
+}
+
+section.ticket-booking {
+  .container {
+    box-sizing: border-box;
+  }
+
+  & * {
+    color: white;
+  }
+}
+
+section.process-overview {
+  background-image: url("./assets/images/white\ background\ items.png");
+  background-repeat: no-repeat;
+  position: static;
+  padding-bottom: 327px;
+
+  .card-fill-container {
+    @include gap-width(30px, 3);
+    margin-top: 40px;
+
+    article {
+      @include flex();
+
+      // ICON
+      & > div:first-child {
+        position: relative;
+
+        div {
+          position: relative;
+          @include flex(center, center);
+          width: 80px;
+          height: 80px;
+          margin-top: 40px;
+          background-color: white;
+          border: $border-light-blue;
+          border-radius: $round-full;
+          margin-right: -40px;
+          font-size: $font-45;
+        }
+      }
+
+      & > div:last-child {
+        padding: 40px;
+        padding-left: 70px;
+
+        & > p:first-child {
+          color: $grey-font;
+          font: {
+            weight: $semi-bold;
+            size: $font-18;
+          }
+        }
+
+        & > p:last-child {
+          margin-top: 20px;
+          color: $grey-font;
+          font-size: $font-16;
+          line-height: 30px;
+        }
+
+        h5 {
+          margin-top: 5px;
+          font: {
+            size: $font-22;
+            weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.available-countries h5 {
+  margin-top: 20px;
+  font: {
+    size: $font-22;
+    weight: bold;
+  }
+}
+
+section.ask-question .card {
+  @include flex(flex-start, center);
+  gap: 20px;
+
+  div:has(> span) {
+    @include flex(center, center);
+    width: 63px;
+    height: 63px;
+    font-size: $font-40;
+  }
+
+  h5 {
+    margin-top: 5px;
+    font: {
+      size: $font-18;
+      weight: $semi-bold;
+    }
+  }
+
+  p {
+    margin-top: 5px;
+    color: $grey-font;
+    font-size: $font-16;
+  }
 }

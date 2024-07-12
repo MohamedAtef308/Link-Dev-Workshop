@@ -55,45 +55,19 @@ footer {
       text-transform: capitalize;
     }
 
-    .list {
+    ul,
+    dl {
       margin-top: 30px;
-
-      li {
-        margin-top: 10px;
-        font-size: $font-16;
-        text-transform: capitalize;
-      }
-
-      dt {
-        margin-top: 20px;
-      }
-
-      dd {
-        margin-top: 5px;
-        font: {
-          size: $font-18;
-          weight: $semi-bold;
-        }
-        width: 17rem;
-      }
-
-      &.list--angle > li::before {
-        content: $icon-angle-right;
-      }
-
-      &.list--check > li::before {
-        content: $icon-check;
-      }
-
-      &.list--calendar > dt::before {
-        content: $icon-calendar;
-      }
     }
 
     .email-container {
       margin-top: 30px;
       width: 300px;
       font-size: $font-16;
+    }
+
+    div:has(> input) {
+      margin-top: 20px;
     }
   }
 

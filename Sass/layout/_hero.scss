@@ -1,63 +1,70 @@
 hero {
+  @include flex(space-between);
+  gap: 110px;
   margin-top: 80px;
 
-  .hero__text__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  &>div:first-child {
+    @include flex(center, flex-start, column);
   }
 
-  .hero__img__container {
+  .hero-img-container {
     // TODO: may change
     width: 440px;
     height: 640px;
 
+    & > img {
+      position: absolute;
+    }
+
     .hero__cards-container > div {
       position: absolute;
 
-      .country-card {
+      .card {
         position: relative;
-        width: 190px;
-        height: 40px;
-        padding: 10px 15px;
-        background-color: white;
-        border-radius: 9.98px;
-        border: 0.5px solid var(--grey-border);
         z-index: 2;
-        display: flex;
-        align-items: center;
-
-        p {
-          margin-left: 15px;
-        }
       }
 
       // positioning cards
-      &:nth-child(1) .country-card {
+      &:nth-child(1) .card {
         top: 71px;
         left: -59px;
       }
 
-      &:nth-child(2) .country-card {
+      &:nth-child(2) .card {
         top: 71px;
         left: 316px;
       }
 
-      &:nth-child(3) .country-card {
+      &:nth-child(3) .card {
         top: 307px;
         left: -75px;
       }
 
-      &:nth-child(4) .country-card {
+      &:nth-child(4) .card {
         top: 482px;
         left: -110px;
       }
 
-      &:nth-child(5) .country-card {
+      &:nth-child(5) .card {
         top: 464px;
         left: 316px;
       }
     }
   }
+}
+
+section:has(> div.hero-background) {
+  @include flex(center);
+  width: 100%;
+
+  & > div.container {
+    @include flex(flex-start, center, column);
+  }
+}
+
+.hero-background {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
