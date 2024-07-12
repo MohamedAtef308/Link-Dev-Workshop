@@ -3,7 +3,7 @@ footer {
   background-color: $dark-blue;
 
   * {
-    color: white;
+    color: $primary-white;
   }
 
   // BACKGROUND
@@ -32,8 +32,8 @@ footer {
 
       & > div {
         @include flex(center, center);
+        @include transition();
         @extend .transparent-b;
-        @extend .transition;
 
         &:hover {
           border: $border-light-blue;

@@ -4,3 +4,16 @@
   background-color: $light-blue;
   border-radius: $round-full;
 }
+
+.dot {
+  display:inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: $round-full;
+  background-color: $dark-blue;
+  border: $border-dark-blue;
+
+  &.dot--hollow {
+    background-color: transparent;
+  }
+}

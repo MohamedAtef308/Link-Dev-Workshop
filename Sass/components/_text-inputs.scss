@@ -6,17 +6,31 @@
   border: $border-grey;
   border-radius: $round-full;
 
+  input {
+    width: -webkit-fill-available;
+    color: $grey-font;
+  }
+
+  textarea {
+    color: $grey-font;
+  }
+
+  &:has(> textarea) {
+    padding-top: 15px;
+    height: $text-area-height;
+  }
+
   &.text-input--semi-transparent {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     width: calc($input-width + 40px);
 
     input {
-      color: white;
+      color: $primary-white;
       width: calc($input-width - ($input-height / 3));
 
       &::placeholder {
-        color: white;
+        color: $primary-white;
       }
     }
 
@@ -35,9 +49,13 @@
     border-radius: $round-sm;
   }
 
-  //   &.text-input--1-icon {
-  //     padding-right: 20px;
-  //   }
+  &.text-input--1-icon {
+    padding-right: 20px;
+
+    &:has(> textarea) {
+      align-items: flex-start;
+    }
+  }
 
   &.text-input--2-icon {
     padding-left: 40px;

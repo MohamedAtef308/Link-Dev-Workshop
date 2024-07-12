@@ -1,5 +1,5 @@
 .card {
-  @extend .transition;
+  @include transition();
   border-radius: $round-sm;
   border: $border-grey;
   padding: 30px;
@@ -59,7 +59,7 @@
 
   //   BACKGROUND COLORS
   &.card--white {
-    background-color: white;
+    background-color: $primary-white;
   }
 
   //   BORDERS
@@ -79,7 +79,7 @@
 
 .card--img-left {
   @include flex(space-between);
-  background-color: white;
+  background-color: $primary-white;
   gap: 20px;
   padding: 0;
   border: none;
@@ -155,7 +155,7 @@
 }
 
 .card--img-top {
-  background-color: white;
+  background-color: $primary-white;
   border: none;
   padding: 0;
 

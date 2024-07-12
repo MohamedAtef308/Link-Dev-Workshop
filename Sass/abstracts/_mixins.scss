@@ -1,20 +1,35 @@
-@mixin flex($main: flex-start, $cross: stretch, $direction: row, $wrap: nowrap) {
-    display: flex;
-    justify-content: $main;
-    align-items: $cross;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
+@mixin flex(
+  $main: flex-start,
+  $cross: stretch,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  justify-content: $main;
+  align-items: $cross;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin transition($type:all, $duration: 0.25s) {
+  transition: $type $duration linear;
 }
 
 @mixin gap-width($space, $n-elements) {
   gap: $space;
-  &> div, &>article {
+  & > div,
+  & > article {
     width: calc((100% - ($n-elements * $space)) / $n-elements);
   }
 }
 
-@mixin grid($col:2, $row:2) {
+@mixin grid($col: 2, $row: 2) {
   display: grid;
   grid-template-columns: repeat($col, 1fr);
   grid-template-rows: repeat($row, 1fr);
+}
+
+@mixin section-row($gap) {
+  @include flex(space-between, center);
+  @include gap-width($gap, 2);
 }

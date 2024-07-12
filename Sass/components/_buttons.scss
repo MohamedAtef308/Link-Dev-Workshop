@@ -7,8 +7,8 @@
   border-radius: $round-full;
   padding: 20px 30px;
   height: 60px;
-  border:none;
-  color: white;
+  border: none;
+  color: $primary-white;
   background-color: $light-blue;
 
   i {
@@ -17,21 +17,45 @@
 }
 
 .btn--transparent {
-    border: 1px solid var(--dark-blue);
+  border: 1px solid var(--dark-blue);
   color: var(--dark-blue);
   background-color: transparent;
 }
 
+.btn--grey {
+  background: $mid-grey;
+}
+
 .btn--circle {
-width: 55px;
+  width: 55px;
   padding: 0;
   height: 55px;
   border-radius: 50%;
 }
 
 .btn--circle-sm {
-      width: 35px;
+  width: 35px;
   height: 35px;
   padding: 0;
   border-radius: 100%;
+}
+
+.btn--theme {
+  position: fixed;
+  right: 10px;
+  top: 30px;
+
+  i {
+    @include transition(all, 0.5s);
+    position: absolute;
+    font-size: $font-22;
+
+    &.hidden {
+      opacity: 0;
+    }
+
+    &.visible {
+      opacity: 1;
+    }
+  }
 }

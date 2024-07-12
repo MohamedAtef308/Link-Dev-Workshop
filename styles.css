@@ -10,6 +10,13 @@
   font-size: 14px;
 }
 
+:root.dark-theme {
+  --background-white: #181818;
+  --primary-white: #000;
+  --light-blue: #FFF;
+  --grey-border: #FFF;
+}
+
 /* GLOBAL STYLES */
 
 h1 {
@@ -29,12 +36,6 @@ option {
   border: 1 solid var(--grey-border);
   color: var(--grey-font);
   font-size: 1.143rem;
-}
-
-textarea {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  height: 100%;
-  width: 100%;
 }
 
 /* GENERIC */

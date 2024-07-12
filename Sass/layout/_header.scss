@@ -2,7 +2,7 @@ nav {
   @include flex(space-between, center);
   margin-top: 20px;
   width: 70vw; // may change
-  background-color: white;
+  background-color: $primary-white;
   padding: 10px;
   border-radius: $round-full;
 

@@ -1,18 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  @include transition(background-color, 0.5s);
   /* TODO: may add box-sizing: border-box */
 }
 
+textarea,
 input {
+  font-family: "Plus Jakarta Sans", sans-serif;
   background-color: transparent;
-  border: none;
   padding-left: $round-sm;
   height: 100%;
+  width: 100%;
+  font-size: $font-16;
+  resize: none;
+  outline: none;
+  border: none;
 }
 
 input[type="number"] {
-    text-align: center;
+  text-align: center;
 }
 
 input:focus,
@@ -32,19 +39,13 @@ a {
   text-decoration: none;
 }
 
-button:hover, select:hover {
+button:hover,
+select:hover {
   cursor: pointer;
 }
 
 li {
   list-style-type: none;
-}
-
-textarea {
-  font-size: $font-16;
-  resize: none;
-  outline: none;
-  border: none;
 }
 
 select {

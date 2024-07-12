@@ -3,12 +3,12 @@ summary.angle {
 
   & > div:last-child {
     @include flex(center, center);
-    @extend .transition;
+    @include transition();
     width: 40px;
     height: 40px;
     border: none;
     border-radius: $round-full;
-    background-color: white;
+    background-color: $primary-white;
     color: $dark-blue;
   }
 
@@ -20,5 +20,5 @@ summary.angle {
 details[open] summary.angle > div:last-child {
   transform: rotate(-90deg);
   background-color: $light-blue;
-  color: white;
+  color: $primary-white;
 }
