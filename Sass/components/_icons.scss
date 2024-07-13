@@ -17,3 +17,15 @@
     background-color: transparent;
   }
 }
+
+.mirror {
+  transform: scaleX(-1);
+}
+
+.up-right {
+  transform: rotate(-45deg);
+}
+
+.down-right {
+  transform: rotate(90deg);
+}
