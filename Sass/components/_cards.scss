@@ -48,6 +48,14 @@
     font-size: $font-16;
   }
 
+  li {
+    color: $grey-font;
+  }
+
+  a {
+    font-size: $font-14;
+  }
+
   //   SIZES
   &.card--xs {
     @include flex(flex-start, center);

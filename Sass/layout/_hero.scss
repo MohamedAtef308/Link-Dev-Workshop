@@ -3,12 +3,11 @@ hero {
   gap: 110px;
   margin-top: 80px;
 
-  &>div:first-child {
+  & > div:first-child {
     @include flex(center, flex-start, column);
   }
 
-  .hero-img-container {
-    // TODO: may change
+  .hero__img-container {
     width: 440px;
     height: 640px;
 
@@ -53,7 +52,7 @@ hero {
   }
 }
 
-section:has(> div.hero-background) {
+section:has(> div.hero__background) {
   @include flex(center);
   width: 100%;
 
@@ -62,7 +61,7 @@ section:has(> div.hero-background) {
   }
 }
 
-.hero-background {
+.hero__background {
   width: 100%;
   object-fit: cover;
   position: absolute;

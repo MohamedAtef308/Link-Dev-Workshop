@@ -1,7 +1,7 @@
 // COLORS
 // LIGHT THEME
 $background-white: #f1f5eb;
-$primary-white: #FFF;
+$primary-white: #fff;
 $dark-blue: #2437ac;
 $light-blue: #00b8ff;
 $grey-font: #727272;
@@ -11,29 +11,26 @@ $primary-black: #16171a;
 $footer-bg: #2437ac;
 
 // DARK THEME
-// $background-white: #181818;
-// $primary-white: #000;
-// $dark-blue: #2437ac;
-// $light-blue: #FFF;
-// $grey-font: #727272;
-// $mid-grey: #d9d9d9;
-// $grey-border: #FFF;
-// $primary-black: #16171a;
+$background-white-dark: #212121;
+$primary-white-dark: #000;
+$light-blue-dark: #fff;
+$grey-border-dark: #fff;
+$footer-bg-dark: #000;
 
 // FONT
 $font-stack: "Plus Jakarta Sans", sans-serif;
-$font-70: 5rem;
-$font-50: 3.571rem;
-$font-45: 3.214rem;
-$font-40: 2.857rem;
-$font-32: 2.286rem;
-$font-30: 2.143rem;
-$font-22: 1.571rem;
-$font-20: 1.429rem;
-$font-18: 1.256rem;
-$font-16: 1.143rem;
-$font-14: 1rem;
-$font-12: 0.857rem;
+$font-70: 4.375rem;
+$font-50: 3.125rem;
+$font-45: 2.8125rem;
+$font-40: 2.5rem;
+$font-32: 2rem;
+$font-30: 1.875rem;
+$font-22: 1.375rem;
+$font-20: 1.25rem;
+$font-18: 1.125rem;
+$font-16: 1rem;
+$font-14: 0.875rem;
+$font-12: 0.75rem;
 $semi-bold: 600;
 $font-normal: 400;
 
@@ -49,7 +46,7 @@ $round-xs: 9.98px;
 $round-sm: 20px;
 $round-lg: 50px;
 $round-full: 999px;
-$border-grey-sm: 0.5px solid $grey-border; 
+$border-grey-sm: 0.5px solid $grey-border;
 $border-grey: 1px solid $grey-border;
 $border-dark-blue: 1px solid $dark-blue;
 $border-light-blue: 1px solid $light-blue;
@@ -59,5 +56,5 @@ $border-light-blue-xl: 5px solid $light-blue;
 // ICONS
 $icon-angle-right: "\f105";
 $icon-check: "\f00c";
-$icon-check--filled:"\f058";
+$icon-check--filled: "\f058";
 $icon-calendar: "\f073";

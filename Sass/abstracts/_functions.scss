@@ -3,5 +3,5 @@
 }
 
 @function px-2-rem($value) {
-  @return $value / 14px;
+  @return ($value / 16px) * 1rem;
 }

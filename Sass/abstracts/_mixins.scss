@@ -23,10 +23,10 @@
   }
 }
 
-@mixin grid($col: 2, $row: 2) {
+@mixin grid($col: 2, $row: 2, $col-area:1fr, $row-area:1fr) {
   display: grid;
-  grid-template-columns: repeat($col, 1fr);
-  grid-template-rows: repeat($row, 1fr);
+  grid-template-columns: repeat($col, $col-area);
+  grid-template-rows: repeat($row, $row-area);
 }
 
 @mixin section-row($gap) {
