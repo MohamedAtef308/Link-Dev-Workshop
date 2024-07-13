@@ -35,27 +35,31 @@ $semi-bold: 600;
 $font-normal: 400;
 
 // SPACING
-$section-margin-top: 120px;
+$section-margin-top: px-2-rem(120px);
 $hero-width: 75vw;
 $section-width: 67vw;
-$input-width: 260px;
-$input-height: 60px;
-$text-area-height: 130px;
+$input-width: px-2-rem(260px);
+$input-height: px-2-rem(60px);
+$text-area-height: px-2-rem(130px);
 
 // BORDER
-$round-xs: 9.98px;
-$round-sm: 20px;
-$round-lg: 50px;
-$round-full: 999px;
-$border-grey-sm: 0.5px solid $grey-border;
-$border-grey: 1px solid $grey-border;
-$border-dark-blue: 1px solid $dark-blue;
-$border-light-blue: 1px solid $light-blue;
-$border-light-blue-lg: 2px solid $light-blue;
-$border-light-blue-xl: 5px solid $light-blue;
+$round-xs: px-2-rem(9.98px);
+$round-sm: px-2-rem(20px);
+$round-lg: px-2-rem(50px);
+$round-full: px-2-rem(999px);
+$border-grey-sm: px-2-rem(0.5px) solid $grey-border;
+$border-grey: px-2-rem(1px) solid $grey-border;
+$border-dark-blue: px-2-rem(1px) solid $dark-blue;
+$border-light-blue: px-2-rem(1px) solid $light-blue;
+$border-light-blue-lg: px-2-rem(2px) solid $light-blue;
+$border-light-blue-xl: px-2-rem(5px) solid $light-blue;
 
 // ICONS
 $icon-angle-right: "\f105";
 $icon-check: "\f00c";
 $icon-check--filled: "\f058";
 $icon-calendar: "\f073";
+
+// SCREENS
+$screen-sm: 768px;
+$screen-md: 1280px;

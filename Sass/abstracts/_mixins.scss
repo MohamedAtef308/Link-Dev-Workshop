@@ -32,4 +32,8 @@
 @mixin section-row($gap) {
   @include flex(space-between, center);
   @include gap-width($gap, 2);
+
+  @media only screen and (max-width: $screen-sm) {
+    flex-direction: column;
+  }
 }
