@@ -8,8 +8,8 @@
   padding: 20px 30px;
   height: 60px;
   border: none;
-  color: $primary-white;
-  background-color: $light-blue;
+  color: var(--primary-white);
+  background-color: $light-blue; //$light-blue;
 
   i {
     font-size: $font-16;
@@ -58,4 +58,8 @@
       opacity: 1;
     }
   }
+}
+
+.btn--change {
+
 }

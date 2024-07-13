@@ -1,7 +1,7 @@
 .minus {
   width: 30px;
   height: 3px;
-  background-color: $light-blue;
+  background-color: var(--light-blue); //$light-blue;
   border-radius: $round-full;
 }
 

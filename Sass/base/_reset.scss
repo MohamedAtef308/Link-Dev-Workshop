@@ -86,3 +86,11 @@ summary + p {
   align-items: center;
   justify-content: center;
 }
+
+dl {
+  margin-top: 30px;
+}
+
+dt {
+  @include flex(flex-start, center);
+}

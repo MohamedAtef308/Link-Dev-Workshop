@@ -24,6 +24,7 @@
     <title>Home 02</title>
   </head>
   <body>
+    <!-- THEME BUTTON -->
     <button class="btn btn--theme" id="toggleBtn">
       <i class="fa-solid fa-moon visible" id="moon"></i>
       <i class="fa-solid fa-sun hidden" id="sun"></i>
@@ -179,14 +180,13 @@
     <main>
       <!-- WHY CHOOSE US -->
       <!-- ABOUT -->
-      <!-- ! -->
       <section class="choose-us">
-        <div class="flex flex-center flex-between container">
-          <div class="relative">
-            <span class="choose-us__offset-border"></span>
-            <div class="flex flex-center flex-between offset-card">
-              <span class="size-50 bold white">25</span>
-              <span class="ml-30 white lh-30">Years Of experience</span>
+        <div class="container">
+          <div>
+            <div class="choose-us__offset-border"></div>
+            <div class="card">
+              <h3>25</h3>
+              <p>Years Of experience</p>
             </div>
             <img
               src="./assets/images/family traveling.png"
@@ -195,7 +195,7 @@
             />
           </div>
 
-          <div class="w-630">
+          <div>
             <div class="section-heading">
               <p>
                 why choose us
@@ -206,41 +206,41 @@
               <h2>Experiencing Traditions Cultural Immersion</h2>
             </div>
 
-            <ul class="mt-30">
-              <li class="flex">
-                <i class="fa-solid fa-circle-check size-22 mt-5"></i>
-                <span class="ml-20">
-                  <h5 class="size-22 bold">Marketing Services</h5>
-                  <p class="grey mt-15">
+            <dl class="list--check--filled">
+              <dt>
+                  <h5 >Marketing Services</h5>
+              </dt>
+              <dd>
+                <p>
+                  Et purus duis sollicitudin dignissim habitant. Egestas nulla
+                  quis venenatis cras sed eu massa loren ipsum
+                </p>
+              </dd>
+              <dt >
+                <h5>IT Maintenance</h5>
+                <dd>
+                  <p>
                     Et purus duis sollicitudin dignissim habitant. Egestas nulla
                     quis venenatis cras sed eu massa loren ipsum
                   </p>
-                </span>
-              </li>
-              <li class="flex mt-15">
-                <i class="fa-solid fa-circle-check size-22 mt-5"></i>
-                <span class="ml-20">
-                  <h5 class="size-22 bold">IT Maintenance</h5>
-                  <p class="grey mt-15">
-                    Et purus duis sollicitudin dignissim habitant. Egestas nulla
-                    quis venenatis cras sed eu massa loren ipsum
-                  </p>
-                </span>
-              </li>
-            </ul>
+                </dd>
+              </dt>
+            </dl>
 
-            <div class="flex flex-center flex-start mt-40">
+            <div>
               <button class="btn">
                 Read More
-                <i class="fa-solid fa-arrow-right white"></i>
+                <i class="fa-solid fa-arrow-right"></i>
               </button>
-              <button class="btn btn--circle ml-30">
-                <i class="fa-solid fa-phone"></i>
-              </button>
-              <span class="ml-15">
-                <p class="grey">Need help?</p>
-                <span class="semi-bold"> (808) 555-0111 </span>
-              </span>
+              <div>
+                <button class="btn btn--circle">
+                  <i class="fa-solid fa-phone"></i>
+                </button>
+                <span>
+                  <p>Need help?</p>
+                  <h6> (808) 555-0111 </h6>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -472,10 +472,9 @@
       </section>
 
       <!-- TICKET BOOKING -->
-      <!-- !here -->
       <section class="ticket-booking">
         <div class="container">
-          <div class="w-540">
+          <div>
             <div class="section-heading">
               <p>
                 <span class="icon mirror">
@@ -489,41 +488,37 @@
               <h2>Wanderlust Chronicles Tales from Around</h2>
             </div>
 
-            <div class="mt-30 flex-center flex-between flex flex-column">
-              <div class="flex w-full">
+            <div>
                 <div class="input-container">
                   <label for="ticket-from"> from </label>
                   <div class="text-input text-input--2-icon">
-                    <span class="icon-up-plane size-30"></span>
+                    <span class="icon-up-plane"></span>
                     <select name="ticket-from" id="ticket-from" class="size-20">
                       <option value="Dhaka">Dhaka</option>
                     </select>
                   </div>
                 </div>
 
-                <div class="input-container ml-20">
+                <div class="input-container">
                   <label for="ticket-to"> to </label>
                   <div class="text-input text-input--2-icon">
-                    <span class="icon-up-plane size-30 down-right"></span>
+                    <span class="icon-up-plane down-right"></span>
                     <select name="ticket-to" id="ticket-to" class="size-20">
                       <option value="Canada">Canada</option>
                     </select>
                   </div>
                 </div>
-              </div>
-
-              <div class="flex w-full mt-20">
                 <div class="input-container">
                   <label for="ticket-date"> date </label>
                   <div class="text-input text-input--2-icon">
-                    <span class="icon-calendar size-30"></span>
+                    <span class="icon-calendar"></span>
                     <select name="ticket-date" id="ticket-date" class="size-20">
                       <option value="03/22/23">03/22/23</option>
                     </select>
                   </div>
                 </div>
 
-                <div class="input-container ml-20">
+                <div class="input-container">
                   <label for="ticket-passenger"> passenger </label>
                   <div class="text-input text-input--2-icon">
                     <span class="minus"></span>
@@ -532,15 +527,13 @@
                       id="ticket-passenger"
                       type="number"
                       value="03"
-                      class="size-20"
                     />
-                    <span class="icon-plus size-30"></span>
+                    <span class="icon-plus"></span>
                   </div>
                 </div>
-              </div>
+              <button class="btn">book now</button>
             </div>
 
-            <button class="btn w-full mt-20">book now</button>
           </div>
         </div>
       </section>
@@ -635,11 +628,10 @@
       </section>
 
       <!-- BANNER -->
-      <div>
+      <div class="banner">
         <img
           src="./assets/images/light blue banner.png"
           alt="light blue banner"
-          width="100%"
         />
       </div>
 
@@ -731,35 +723,35 @@
           <div>
             <img src="./assets/images/3 guys traveling.png" alt="" />
           </div>
-            <div class="card card--white">
-                <img src="./assets/images/quote.png" alt="" />
-                <p>
-                  Leverage agile frameworks to provide is go a robust synopsis
-                  is for strategy foster go to Leverage agile m eworks to
-                  provide a visa is you in the grobust synopsis for stratey
-                  fostr collaborative thinking t o further the
-                </p>
+          <div class="card card--white">
+            <img src="./assets/images/quote.png" alt="" />
+            <p>
+              Leverage agile frameworks to provide is go a robust synopsis is
+              for strategy foster go to Leverage agile m eworks to provide a
+              visa is you in the grobust synopsis for stratey fostr
+              collaborative thinking t o further the
+            </p>
+            <div>
               <div>
-                <div>
-                  <span class="btn--circle"></span>
-                  <span
-                    ><h5>Kathleen Smith</h5>
-                    <p >Fuel Company</p>
-                  </span>
-                </div>
-                <div>
-                  <span class="dot dot--hollow"></span>
-                  <span class="dot"></span>
-                  <span class="dot dot--hollow"></span>
-                </div>
+                <span class="btn--circle"></span>
+                <span
+                  ><h5>Kathleen Smith</h5>
+                  <p>Fuel Company</p>
+                </span>
+              </div>
+              <div>
+                <span class="dot dot--hollow"></span>
+                <span class="dot"></span>
+                <span class="dot dot--hollow"></span>
               </div>
             </div>
+          </div>
         </div>
       </section>
 
       <!-- COMPANY LOGOS -->
-      <div class="flex flex-center flex-between container">
-        <div class="icon size-50">
+      <div class="banner container">
+        <div class="icon">
           <span class="icon-Company-logo-1"
             ><span class="path1"></span><span class="path2"></span
             ><span class="path3"></span><span class="path4"></span
@@ -767,11 +759,11 @@
           ></span>
         </div>
 
-        <div class="icon size-50">
+        <div class="icon">
           <span class="icon-Company-logo-2"></span>
         </div>
 
-        <div class="icon size-50">
+        <div class="icon">
           <span class="icon-Company-logo-3"
             ><span class="path1"></span><span class="path2"></span
             ><span class="path3"></span><span class="path4"></span
@@ -780,7 +772,7 @@
           ></span>
         </div>
 
-        <div class="icon size-50">
+        <div class="icon">
           <span class="icon-Company-logo-4"
             ><span class="path1"></span><span class="path2"></span
             ><span class="path3"></span><span class="path4"></span
@@ -788,7 +780,7 @@
           ></span>
         </div>
 
-        <div class="icon size-50">
+        <div class="icon">
           <span class="icon-Company-logo-5"></span>
         </div>
       </div>
@@ -1258,13 +1250,12 @@
         </div>
       </div>
     </footer>
-    
+
     <!-- SCRIPTS -->
     <script
       src="https://kit.fontawesome.com/5374972f8b.js"
       crossorigin="anonymous"
     ></script>
     <script src="./app.js"></script>
-
   </body>
 </html>

@@ -1,9 +1,9 @@
 footer {
   width: 100%;
-  background-color: $dark-blue;
+  background-color: var(--footer-bg);
 
   * {
-    color: $primary-white;
+    color: $primary-white;//var(--primary-white);
   }
 
   // BACKGROUND

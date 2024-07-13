@@ -1,4 +1,4 @@
 body {
   @include flex(flex-start, center, column);
-  background-color: $background-white;
+  background-color: var(--background-white);
 }

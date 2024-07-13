@@ -1,20 +1,22 @@
 :root {
-  --background-white: #f1f5eb;
-  --primary-white: #e3dbd8;
-  --dark-blue: #2437ac;
-  --light-blue: #00b8ff;
-  --grey-font: #727272;
-  --mid-grey: #d9d9d9;
-  --grey-border: #e3dbd8;
-  --primary-black: #16171a;
+--background-white: #f1f5eb;
+--primary-white: #FFF;
+--dark-blue: #2437ac;
+--light-blue: #00b8ff;
+--grey-font: #727272;
+--mid-grey: #d9d9d9;
+--grey-border: #e3dbd8;
+--primary-black: #16171a;
+--footer-bg: #2437ac;
   font-size: 14px;
 }
 
 :root.dark-theme {
-  --background-white: #181818;
+  --background-white: #212121;
   --primary-white: #000;
   --light-blue: #FFF;
   --grey-border: #FFF;
+  --footer-bg: #000;
 }
 
 /* GLOBAL STYLES */
@@ -163,15 +165,6 @@ option {
   line-height: 2.143rem;
 }
 
-ul.list > li::before,
-dl > dt::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 1.143rem;
-  color: var(--light-blue);
-  margin-right: 15px;
-}
-
 .w-full {
   width: 100% !important;
 }
@@ -265,34 +258,3 @@ dl > dt::before {
 }
 
 /* COMPONENTS */
-
-/*  */
-/* CHOOSE US SECTION */
-/*  */
-
-.choose-us {
-  display: flex;
-}
-
-.choose-us__offset-border {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 5px solid var(--light-blue);
-  border-radius: 20px;
-  top: 40px;
-  left: -40px;
-  z-index: 1;
-}
-
-.offset-card {
-  width: 182;
-  position: absolute;
-  background-color: var(--light-blue);
-  padding: 20px 30px;
-  border-radius: 20px;
-  top: 405px;
-  left: 318px;
-  z-index: 2;
-}

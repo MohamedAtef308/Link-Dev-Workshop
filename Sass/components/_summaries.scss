@@ -8,7 +8,7 @@ summary.angle {
     height: 40px;
     border: none;
     border-radius: $round-full;
-    background-color: $primary-white;
+    background-color: var(--primary-white);
     color: $dark-blue;
   }
 
@@ -19,6 +19,6 @@ summary.angle {
 
 details[open] summary.angle > div:last-child {
   transform: rotate(-90deg);
-  background-color: $light-blue;
-  color: $primary-white;
+  background-color: var(--light-blue); //$light-blue;
+  color: var(--primary-white);
 }

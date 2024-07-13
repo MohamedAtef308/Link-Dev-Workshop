@@ -67,4 +67,8 @@ section:has(> div.hero-background) {
   object-fit: cover;
   position: absolute;
   z-index: -1;
+
+  img {
+    width: 100%;
+  }
 }

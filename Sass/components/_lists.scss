@@ -21,9 +21,13 @@ dd {
   width: 17rem;
 }
 
-li::before {
+dt::before {
+  color: $light-blue;
+}
+
+li::before, dt::before {
     margin-right: 15px;
-    color: $light-blue;
+    color: $light-blue; //$light-blue;
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
 }
@@ -38,4 +42,9 @@ li::before {
 
 .list--calendar > dt::before {
   content: $icon-calendar;
+}
+
+.list--check--filled > dt::before {
+  content: $icon-check--filled;
+  color: $dark-blue;
 }

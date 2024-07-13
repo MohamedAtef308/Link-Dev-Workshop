@@ -37,7 +37,7 @@
     // ICON
     & > div:last-child {
       @include flex(center, center);
-      background-color: $light-blue;
+      background-color: $light-blue; //$light-blue;
       width: $input-height;
       height: $input-height;
       font: $font-16;
@@ -60,5 +60,10 @@
   &.text-input--2-icon {
     padding-left: 40px;
     padding-right: 40px;
+
+    input[type="number"] {
+      width: 80px;
+      padding-left: 0;
+    }
   }
 }

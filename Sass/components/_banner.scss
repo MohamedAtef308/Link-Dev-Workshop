@@ -1,0 +1,12 @@
+.banner {
+    @include flex(space-between, center);
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+
+    div.icon {
+        font-size: $font-50;
+    }
+}
