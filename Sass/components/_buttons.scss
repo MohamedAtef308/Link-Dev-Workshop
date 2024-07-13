@@ -13,6 +13,14 @@
 
   i {
     font-size: $font-16;
+
+    &.hidden {
+      opacity: 0;
+    }
+
+    &.visible {
+      opacity: 1;
+    }
   }
 }
 
@@ -44,18 +52,32 @@
   position: fixed;
   right: px-2-rem(10px);
   top: px-2-rem(30px);
+  z-index: 99;
 
   i {
-    @include transition(all, 0.5s);
+    @include transition(color, 0.5s);
     position: absolute;
     font-size: $font-22;
+  }
+}
 
-    &.hidden {
-      opacity: 0;
-    }
+.btn--menu {
+  position: fixed;
+  right: px-2-rem(10px);
+  top: px-2-rem(100px);
+  z-index: 99;
 
-    &.visible {
-      opacity: 1;
-    }
+  i {
+    @include transition(color, 0.5s);
+    position: absolute;
+    font-size: $font-22;
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    @include flex(center, center);
+  }
+
+  @media only screen and (min-width: $screen-sm) {
+    display: none;
   }
 }

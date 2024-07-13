@@ -11,7 +11,7 @@
   flex-wrap: $wrap;
 }
 
-@mixin transition($type:all, $duration: 0.25s) {
+@mixin transition($type: all, $duration: 0.25s) {
   transition: $type $duration linear;
 }
 
@@ -20,10 +20,14 @@
   & > div,
   & > article {
     width: calc((100% - ($n-elements * $space)) / $n-elements);
+
+    @media only screen and (max-width: $screen-sm) {
+      width: 90%;
+    }
   }
 }
 
-@mixin grid($col: 2, $row: 2, $col-area:1fr, $row-area:1fr) {
+@mixin grid($col: 2, $row: 2, $col-area: 1fr, $row-area: 1fr) {
   display: grid;
   grid-template-columns: repeat($col, $col-area);
   grid-template-rows: repeat($row, $row-area);
@@ -32,8 +36,4 @@
 @mixin section-row($gap) {
   @include flex(space-between, center);
   @include gap-width($gap, 2);
-
-  @media only screen and (max-width: $screen-sm) {
-    flex-direction: column;
-  }
 }

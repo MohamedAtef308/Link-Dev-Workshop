@@ -147,10 +147,23 @@ section.ticket-booking > div.container {
   & > div {
     width: px-2-rem(540px);
 
+    @media only screen and (max-width: $screen-sm) {
+      width: 100%;
+    }
+
     & > div:last-child {
       @include grid(2, 3, 1fr, auto);
       gap: px-2-rem(20px);
       margin-top: px-2-rem(30px);
+
+      @media only screen and (max-width: $screen-sm) {
+        gap: auto;
+
+        div.input-container,
+        div.text-input {
+          width: 100%;
+        }
+      }
 
       button {
         grid-column: span 2;
@@ -164,6 +177,10 @@ section.ticket-booking > div.container {
 
   & * {
     color: $primary-white;
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    padding: px-2-rem(50px) px-2-rem(50px);
   }
 }
 
@@ -205,6 +222,10 @@ section.visa-category > div.container > div:last-child {
   @include grid(3, 2);
   gap: px-2-rem(30px);
 
+  @media only screen and (max-width: $screen-sm) {
+    @include flex(flex-start, center, column);
+  }
+
   img {
     grid-column: 3;
     grid-row: 1 / 3;
@@ -230,6 +251,11 @@ section.quote > div.container {
     position: relative;
     margin-left: px-2-rem(-190px);
     padding: px-2-rem(60px);
+
+    @media only screen and (max-width: $screen-sm) {
+      margin-left: 0;
+      margin-top: px-2-rem(-150px);
+    }
 
     p {
       margin-top: px-2-rem(20px);
@@ -376,6 +402,10 @@ section.success-story > div.container {
       }
     }
   }
+
+  @media only screen and (max-width: $screen-sm) {
+    padding: px-2-rem(50px);
+  }
 }
 
 // MESSAGE US
@@ -435,5 +465,9 @@ section.recent-blogs > div.container > div:last-child {
 
   & > div:first-child {
     grid-row: span 2;
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    @include grid(1, 4);
   }
 }

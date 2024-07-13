@@ -1,6 +1,8 @@
+const menuBtn = document.querySelector("#menuBtn");
 const toggleBtn = document.querySelector("#toggleBtn");
 const moonIcon = document.querySelector("#moon");
 const sunIcon = document.querySelector("#sun");
+const nav = document.querySelector("nav");
 
 function toggleTheme() {
     // TOGGLE THEME
@@ -14,4 +16,10 @@ function toggleTheme() {
     sunIcon.classList.toggle("visible");
 }
 
+function toggleMenu() {
+  // TOGGLE MENU
+  nav.classList.toggle("visible");
+}
+
 toggleBtn.addEventListener("click", toggleTheme);
+menuBtn.addEventListener("click", toggleMenu);
