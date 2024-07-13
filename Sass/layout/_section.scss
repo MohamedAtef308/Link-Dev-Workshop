@@ -55,10 +55,6 @@ section.choose-us > div.container {
         font-size: $font-22;
       }
 
-      h5 {
-        font-size: $font-22;
-      }
-
       dd {
         width: 90%;
       }
@@ -87,13 +83,6 @@ section.choose-us > div.container {
         p {
           color: $grey-font;
           font-size: $font-16;
-        }
-
-        h6 {
-          font: {
-            weight: $semi-bold;
-            size: $font-18;
-          }
         }
       }
     }
@@ -330,10 +319,6 @@ section.process-overview {
 
         h5 {
           margin-top: px-2-rem(5px);
-          font: {
-            size: $font-22;
-            weight: bold;
-          }
         }
       }
     }
@@ -425,13 +410,6 @@ section.message-us .container {
         color: $grey-font;
         line-height: px-2-rem(30px);
         font-size: $font-16;
-      }
-
-      h6 {
-        font: {
-          weight: $semi-bold;
-          size: $font-18;
-        }
       }
 
       i {

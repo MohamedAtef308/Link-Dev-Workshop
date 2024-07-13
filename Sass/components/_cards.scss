@@ -7,38 +7,20 @@
 
   h3 {
     margin-top: px-2-rem(-10px);
-    font: {
-      size: $font-50;
-      weight: bold;
-    }
   }
 
   h4 {
-    // TODO: from available countries & recent blogs & coaching support
     margin-top: px-2-rem(10px);
-    text-transform: capitalize;
-    font: {
-      size: $font-30;
-      weight: $semi-bold;
-    }
   }
 
   h5 {
-    // TODO: from available countries & recent blogs & coaching support
     text-transform: capitalize;
     margin-top: px-2-rem(20px);
-    font: {
-      size: $font-22;
-      weight: bold;
-    }
   }
 
   h6 {
     color: $grey-font;
-    font: {
-      weight: $semi-bold;
-      size: $font-14;
-    }
+    font-size: $font-14;
   }
 
   p {
@@ -103,11 +85,8 @@
   h4 {
     width: px-2-rem(320px);
     margin-top: px-2-rem(10px);
-    font: {
-      size: $font-22;
-      weight: bold;
-    }
     line-height: px-2-rem(30px);
+    font-size: $font-22;
   }
 
   h5 {
@@ -178,10 +157,7 @@
   h4 {
     margin-top: px-2-rem(20px);
     line-height: px-2-rem(30px);
-    font: {
-      size: $font-22;
-      weight: bold;
-    }
+    font-size: $font-22;
   }
 
   img {

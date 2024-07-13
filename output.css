@@ -120,7 +120,9 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-button, option, select {
+button,
+option,
+select {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -130,6 +132,36 @@ button {
 
 label {
   font-size: 0.875rem;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+h4 {
+  text-transform: capitalize;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+h5 {
+  text-transform: capitalize;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+h6 {
+  color: #727272;
+  font-weight: 600;
+  font-size: 1.125rem;
 }
 
 .banner {
@@ -218,24 +250,16 @@ label {
 }
 .card h3 {
   margin-top: -0.625rem;
-  font-size: 3.125rem;
-  font-weight: bold;
 }
 .card h4 {
   margin-top: 0.625rem;
-  text-transform: capitalize;
-  font-size: 1.875rem;
-  font-weight: 600;
 }
 .card h5 {
   text-transform: capitalize;
   margin-top: 1.25rem;
-  font-size: 1.375rem;
-  font-weight: bold;
 }
 .card h6 {
   color: #727272;
-  font-weight: 600;
   font-size: 0.875rem;
 }
 .card p {
@@ -295,9 +319,8 @@ label {
 .card--img-left h4 {
   width: 20rem;
   margin-top: 0.625rem;
-  font-size: 1.375rem;
-  font-weight: bold;
   line-height: 1.875rem;
+  font-size: 1.375rem;
 }
 .card--img-left h5 {
   font-size: 1.125rem;
@@ -362,7 +385,6 @@ label {
   margin-top: 1.25rem;
   line-height: 1.875rem;
   font-size: 1.375rem;
-  font-weight: bold;
 }
 .card--img-top img {
   margin-top: 1.25rem;
@@ -516,11 +538,8 @@ label {
   text-transform: capitalize;
 }
 .section-heading > h2 {
-  text-transform: capitalize;
-  font-size: 3.125rem;
   line-height: 3.75rem;
   margin-top: 0.625rem;
-  font-weight: bold;
 }
 
 .container--lg .section-heading {
@@ -902,9 +921,6 @@ section.choose-us > div.container > div:last-child .list--check--filled dt::befo
   margin-top: 0.25rem;
   font-size: 1.375rem;
 }
-section.choose-us > div.container > div:last-child .list--check--filled h5 {
-  font-size: 1.375rem;
-}
 section.choose-us > div.container > div:last-child .list--check--filled dd {
   width: 90%;
 }
@@ -936,10 +952,6 @@ section.choose-us > div.container > div:last-child > div:last-child > div {
 section.choose-us > div.container > div:last-child > div:last-child > div p {
   color: #727272;
   font-size: 1rem;
-}
-section.choose-us > div.container > div:last-child > div:last-child > div h6 {
-  font-weight: 600;
-  font-size: 1.125rem;
 }
 
 section.coaching-support {
@@ -1173,8 +1185,6 @@ section.process-overview .card-fill-container article > div:last-child > p:last-
 }
 section.process-overview .card-fill-container article > div:last-child h5 {
   margin-top: 0.3125rem;
-  font-size: 1.375rem;
-  font-weight: bold;
 }
 
 section.success-story > div.container {
@@ -1278,10 +1288,6 @@ section.message-us .container > div:last-child > div:not(:first-child) p {
   line-height: 1.875rem;
   font-size: 1rem;
 }
-section.message-us .container > div:last-child > div:not(:first-child) h6 {
-  font-weight: 600;
-  font-size: 1.125rem;
-}
 section.message-us .container > div:last-child > div:not(:first-child) i {
   color: var(--light-blue);
   font-size: 1.375rem;
@@ -1365,8 +1371,6 @@ footer .lists {
   width: 100%;
 }
 footer .lists h5 {
-  font-size: 1.375rem;
-  font-weight: bold;
   text-transform: capitalize;
 }
 footer .lists ul,
