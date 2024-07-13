@@ -1,14 +1,15 @@
 nav {
   @include flex(space-between, center);
-  margin-top: 20px;
-  width: 70vw; // may change
+  gap: px-2-rem(130px);
+  margin-top: px-2-rem(20px);
+  width: 100%;
   background-color: var(--primary-white);
-  padding: 10px;
+  padding: px-2-rem(10px);
   border-radius: $round-full;
 
   .nav__links-container {
     @include flex(space-between, center);
-    gap: 20px;
+    gap: px-2-rem(20px);
 
     button {
       @extend .transparent;
@@ -20,7 +21,7 @@ nav {
       }
 
       i {
-        margin-left: 5px;
+        margin-left: px-2-rem(5px);
       }
     }
   }

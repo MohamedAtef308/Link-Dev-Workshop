@@ -2,5 +2,5 @@
     @include flex(space-between, center);
     font-weight: bold;
     font-size: $font-32;
-    gap: 10px;
+    gap: px-2-rem(10px);
 }

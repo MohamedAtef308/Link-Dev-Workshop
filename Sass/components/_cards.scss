@@ -2,11 +2,11 @@
   @include transition();
   border-radius: $round-sm;
   border: $border-grey;
-  padding: 30px;
+  padding: px-2-rem(30px);
   color: $dark-blue;
 
   h3 {
-    margin-top: -10px;
+    margin-top: px-2-rem(-10px);
     font: {
       size: $font-50;
       weight: bold;
@@ -15,7 +15,7 @@
 
   h4 {
     // TODO: from available countries & recent blogs & coaching support
-    margin-top: 10px;
+    margin-top: px-2-rem(10px);
     text-transform: capitalize;
     font: {
       size: $font-30;
@@ -26,7 +26,7 @@
   h5 {
     // TODO: from available countries & recent blogs & coaching support
     text-transform: capitalize;
-    margin-top: 20px;
+    margin-top: px-2-rem(20px);
     font: {
       size: $font-22;
       weight: bold;
@@ -42,9 +42,9 @@
   }
 
   p {
-    margin-top: 20px;
+    margin-top: px-2-rem(20px);
     color: $grey-font;
-    line-height: 30px;
+    line-height: px-2-rem(30px);
     font-size: $font-16;
   }
 
@@ -59,10 +59,10 @@
   //   SIZES
   &.card--xs {
     @include flex(flex-start, center);
-    gap: 15px;
-    width: 190px;
-    height: 40px;
-    padding: 10px 15px;
+    gap: px-2-rem(15px);
+    width: px-2-rem(190px);
+    height: px-2-rem(40px);
+    padding: px-2-rem(10px) px-2-rem(15px);
     border: $border-grey-sm;
     border-radius: $round-xs;
 
@@ -96,18 +96,18 @@
 .card--img-left {
   @include flex(space-between);
   background-color: var(--primary-white);
-  gap: 20px;
+  gap: px-2-rem(20px);
   padding: 0;
   border: none;
 
   h4 {
-    width: 320px;
-    margin-top: 10px;
+    width: px-2-rem(320px);
+    margin-top: px-2-rem(10px);
     font: {
       size: $font-22;
       weight: bold;
     }
-    line-height: 30px;
+    line-height: px-2-rem(30px);
   }
 
   h5 {
@@ -115,18 +115,18 @@
       size: $font-18;
       weight: $semi-bold;
     }
-    line-height: 28px;
+    line-height: px-2-rem(28px);
   }
 
   & > div:last-child {
-    padding-top: 40px;
+    padding-top: px-2-rem(40px);
 
     & > div:has(> a) {
-      margin-top: 30px;
+      margin-top: px-2-rem(30px);
 
       i {
         font-size: $font-16;
-        margin-left: 10px;
+        margin-left: px-2-rem(10px);
       }
 
       & * {
@@ -137,16 +137,16 @@
   }
 
   &.card--with-date > div:last-child {
-    padding: 30px;
+    padding: px-2-rem(30px);
     padding-left: 0;
 
     .card-date {
       @include flex(flex-start, center);
-      gap: 30px;
+      gap: px-2-rem(30px);
 
       h6 {
         @include flex(flex-start, center);
-        gap: 5px;
+        gap: px-2-rem(5px);
       }
 
       & * {
@@ -157,7 +157,7 @@
     }
 
     & > div:has(> a) {
-      margin-top: 20px;
+      margin-top: px-2-rem(20px);
 
       i {
         font-size: $font-14;
@@ -176,8 +176,8 @@
   padding: 0;
 
   h4 {
-    margin-top: 20px;
-    line-height: 30px;
+    margin-top: px-2-rem(20px);
+    line-height: px-2-rem(30px);
     font: {
       size: $font-22;
       weight: bold;
@@ -185,11 +185,11 @@
   }
 
   img {
-    margin-top: 20px;
+    margin-top: px-2-rem(20px);
   }
 
   div:has(> a) {
-    margin-top: 30px;
+    margin-top: px-2-rem(30px);
     font-weight: $semi-bold;
 
     a {
@@ -197,21 +197,21 @@
     }
 
     i {
-      margin-left: 10px;
+      margin-left: px-2-rem(10px);
     }
   }
 
   & > div:last-child {
-    padding: 40px;
+    padding: px-2-rem(40px);
     padding-top: 0;
 
     .card-date {
       @include flex(flex-start, center);
-      gap: 60px;
+      gap: px-2-rem(60px);
 
       h6 {
         @include flex(flex-end, center);
-        gap: 10px;
+        gap: px-2-rem(10px);
 
         color: $grey-font;
         font: {

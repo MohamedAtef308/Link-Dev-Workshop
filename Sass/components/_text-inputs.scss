@@ -16,14 +16,14 @@
   }
 
   &:has(> textarea) {
-    padding-top: 15px;
+    padding-top: px-2-rem(15px);
     height: $text-area-height;
   }
 
   &.text-input--semi-transparent {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
-    width: calc($input-width + 40px);
+    width: calc($input-width + px-2-rem(40px));
 
     input {
       color: $primary-white;
@@ -50,7 +50,7 @@
   }
 
   &.text-input--1-icon {
-    padding-right: 20px;
+    padding-right: px-2-rem(20px);
 
     &:has(> textarea) {
       align-items: flex-start;
@@ -58,11 +58,11 @@
   }
 
   &.text-input--2-icon {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: px-2-rem(40px);
+    padding-right: px-2-rem(40px);
 
     input[type="number"] {
-      width: 80px;
+      width: px-2-rem(80px);
       padding-left: 0;
     }
   }

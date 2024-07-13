@@ -8,9 +8,9 @@ footer {
 
   // BACKGROUND
   & > div:first-child {
-    height: 548px;
+    height: px-2-rem(548px);
     background-image: url("./assets/images/Vector.png");
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: px-2-rem(1px) solid rgba(255, 255, 255, 0.1);
   }
 
   .content {
@@ -23,12 +23,12 @@ footer {
   .logo-social-media {
     @include flex(space-between, center);
     width: 100%;
-    padding-bottom: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: px-2-rem(30px);
+    border-bottom: px-2-rem(1px) solid rgba(255, 255, 255, 0.1);
 
     .social-media {
       @include flex(space-between, center);
-      gap: 10px;
+      gap: px-2-rem(10px);
 
       & > div {
         @include flex(center, center);
@@ -57,17 +57,17 @@ footer {
 
     ul,
     dl {
-      margin-top: 30px;
+      margin-top: px-2-rem(30px);
     }
 
     .email-container {
-      margin-top: 30px;
-      width: 300px;
+      margin-top: px-2-rem(30px);
+      width: px-2-rem(300px);
       font-size: $font-16;
     }
 
     div:has(> input) {
-      margin-top: 20px;
+      margin-top: px-2-rem(20px);
     }
   }
 
@@ -77,11 +77,11 @@ footer {
     margin: 0 auto;
     opacity: 0.8;
     font-size: $font-16;
-    padding: 30px 0;
+    padding: px-2-rem(30px) 0;
 
     & > div:last-child {
       @include flex(space-between);
-      width: 402px;
+      width: px-2-rem(402px);
     }
   }
 }

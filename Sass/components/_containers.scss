@@ -5,19 +5,24 @@
 
 .container--lg {
   background-color: var(--primary-white);
-  border-radius: 50px;
-  padding: 120px 12%;
+  border-radius: px-2-rem(50px);
+  padding: px-2-rem(120px) 12%;
+  
+  & > div > div:first-child {
+    @include flex(space-between, center, column);
+  }
 }
+
 
 .input-container {
   @include flex(flex-start, stretch, column);
   width: $input-width;
-  gap: 10px;
+  gap: px-2-rem(10px);
 }
 
 .collage-container {
   @include grid(2, 3, 1fr, auto);
-  gap: 30px;
+  gap: px-2-rem(30px);
 
   &>div:nth-child(1) {
     grid-row: 1/3;
@@ -43,17 +48,16 @@
 
 .card-fill-container {
   @include flex(space-between, center);
-  @include gap-width(30px, 4);
+  @include gap-width(px-2-rem(30px), 4);
   width: auto;
 }
 
 .section-heading-container {
   @include flex(space-between, flex-end);
-  margin-bottom: 60px;
+  margin-bottom: px-2-rem(60px);
 }
 
-// TODO: check in why choose us, ask question, visa category, success story, message us
 .section-row {
   @include flex(space-between, center);
-  @include gap-width(30px, 2);
+  @include gap-width(px-2-rem(30px), 2);
 }

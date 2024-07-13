@@ -17,7 +17,7 @@
 }
 
 .btn--transparent {
-  border: 1px solid var(--dark-blue);
+  border: px-2-rem(1px) solid var(--dark-blue);
   color: var(--dark-blue);
   background-color: transparent;
 }
@@ -27,23 +27,23 @@
 }
 
 .btn--circle {
-  width: 55px;
+  width: px-2-rem(55px);
   padding: 0;
-  height: 55px;
+  height: px-2-rem(55px);
   border-radius: 50%;
 }
 
 .btn--circle-sm {
-  width: 35px;
-  height: 35px;
+  width: px-2-rem(35px);
+  height: px-2-rem(35px);
   padding: 0;
   border-radius: 100%;
 }
 
 .btn--theme {
   position: fixed;
-  right: 10px;
-  top: 30px;
+  right: px-2-rem(10px);
+  top: px-2-rem(30px);
 
   i {
     @include transition(all, 0.5s);
@@ -58,8 +58,4 @@
       opacity: 1;
     }
   }
-}
-
-.btn--change {
-
 }

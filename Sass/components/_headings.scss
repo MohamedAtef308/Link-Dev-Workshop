@@ -1,5 +1,5 @@
 .section-heading {
-    width: 630px;
+    width: px-2-rem(630px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -7,10 +7,10 @@
   // PARAGRAPH
   &>p {
     @include flex(space-between,center);
-    gap: 10px;
+    gap: px-2-rem(10px);
     text-transform: uppercase;
     font-weight: $semi-bold;
-    letter-spacing: 1.4px;
+    letter-spacing: px-2-rem(1.4px);
     font-size: $font-14;
   }
 
@@ -18,23 +18,23 @@
   &>h1 {
     font-size: $font-70;
     font-weight: bold;
-    margin-bottom: 41px;
-    line-height: 90px;
-    width: 660px;
+    margin-bottom: px-2-rem(41px);
+    line-height: px-2-rem(90px);
+    width: px-2-rem(660px);
     text-transform: capitalize;
   }
 
   &>h2 {
     text-transform: capitalize;
     font-size: $font-50;
-    line-height: 60px;
-    margin-top: 10px;
+    line-height: px-2-rem(60px);
+    margin-top: px-2-rem(10px);
     font-weight: bold;
   }
 }
 
 .container--lg .section-heading{
-  width: 630px;
+  width: px-2-rem(630px);
   @include flex(center, center, column);
   text-align: center;
 }
