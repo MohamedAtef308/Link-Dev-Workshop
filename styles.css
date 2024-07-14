@@ -262,7 +262,7 @@ h6 {
     flex-wrap: nowrap;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .btn--menu {
     display: none;
   }
@@ -811,7 +811,7 @@ nav .nav__links-container button {
 nav .nav__links-container button i {
   margin-left: 0.3125rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   nav {
     display: none;
   }
