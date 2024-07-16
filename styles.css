@@ -1669,7 +1669,7 @@ body {
   --gradient-bg: #2437ac;
   font-size: 16px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 430px) {
   :root {
     font-size: 8px;
   }
@@ -1685,12 +1685,12 @@ body {
 :root.high-contrast {
   --background-white: #000;
   --primary-white: #000;
-  --dark-blue: #FFFF00;
-  --light-blue: #1E90FF;
+  --dark-blue: #ffff00;
+  --light-blue: #1e90ff;
   --grey-font: #fff;
   --mid-grey: #fff;
-  --grey-border: #1E90FF;
-  --primary-black: #1E90FF;
+  --grey-border: #1e90ff;
+  --primary-black: #1e90ff;
   --footer-bg: #000;
   --gradient-bg: #000;
 }

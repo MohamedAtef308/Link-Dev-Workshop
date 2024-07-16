@@ -6,7 +6,7 @@ section.choose-us > div.container {
   & > div:first-child {
     position: relative;
 
-    @media only screen and (max-width: $screen-sm) {
+    @media only screen and (max-width: $screen-md) {
       @include flex(center, center);
     }
 
@@ -163,7 +163,7 @@ section.ticket-booking > div.container {
   & > div {
     width: px-2-rem(540px);
 
-    @media only screen and (max-width: $screen-sm) {
+    @media only screen and (max-width: $screen-md) {
       width: 100%;
     }
 
@@ -172,7 +172,7 @@ section.ticket-booking > div.container {
       gap: px-2-rem(20px);
       margin-top: px-2-rem(30px);
 
-      @media only screen and (max-width: $screen-sm) {
+      @media only screen and (max-width: $screen-md) {
         gap: auto;
 
         div.input-container,
@@ -195,7 +195,7 @@ section.ticket-booking > div.container {
     color: $primary-white;
   }
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     padding: px-2-rem(50px) px-2-rem(50px);
   }
 }
@@ -238,7 +238,7 @@ section.visa-category > div.container > div:last-child {
   @include grid(3, 2);
   gap: px-2-rem(30px);
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     @include flex(flex-start, center, column);
   }
 
@@ -280,7 +280,7 @@ section.quote > div.container {
       height: px-2-rem(55.7px);
     }
 
-    @media only screen and (max-width: $screen-sm) {
+    @media only screen and (max-width: $screen-md) {
       margin-left: 0;
       margin-top: px-2-rem(-150px);
     }
@@ -431,7 +431,7 @@ section.success-story > div.container {
     }
   }
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     padding: px-2-rem(50px);
   }
 }
@@ -495,7 +495,7 @@ section.recent-blogs > div.container > div:last-child {
     grid-row: span 2;
   }
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     @include grid(1, 4, auto, 1fr);
 
     & > div:first-child {

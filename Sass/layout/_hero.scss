@@ -2,7 +2,7 @@ hero {
   @include section-row(px-2-rem(110px));
   margin-top: px-2-rem(80px);
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     flex-direction: column;
   }
 

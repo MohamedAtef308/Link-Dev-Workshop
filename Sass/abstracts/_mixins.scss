@@ -21,7 +21,7 @@
   & > article {
     width: calc((100% - ($n-elements * $space)) / $n-elements);
 
-    @media only screen and (max-width: $screen-sm) {
+    @media only screen and (max-width: $screen-md) {
       width: 90%;
     }
   }

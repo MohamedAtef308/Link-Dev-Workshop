@@ -18,8 +18,8 @@ $footer-bg-dark: #000;
 
 // HIGH CONTRAST THEME
 $background-contrast: #000;
-$primary-contrast: #FFFF00;
-$secondary-contrast: #1E90FF;
+$primary-contrast: #ffff00;
+$secondary-contrast: #1e90ff;
 $text-contrast: #fff;
 
 // FONT
@@ -66,4 +66,5 @@ $icon-check--filled: "\f058";
 $icon-calendar: "\f073";
 
 // SCREENS
-$screen-sm: 768px;
+$screen-sm: 430px;
+$screen-md: 768px;

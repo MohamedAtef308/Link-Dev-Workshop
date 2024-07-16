@@ -47,7 +47,7 @@ footer {
     @include flex(space-between);
     width: 100%;
 
-    @media only screen and (max-width: $screen-sm) {
+    @media only screen and (max-width: $screen-md) {
       @include grid(2, 2);
     }
 

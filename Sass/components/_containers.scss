@@ -2,7 +2,7 @@
   width: $section-width;
   border-radius: $round-lg;
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     width: 90vw;
     flex-direction: column !important;
   }
@@ -17,7 +17,7 @@
     @include flex(space-between, center, column);
   }
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     padding: px-2-rem(50px) px-2-rem(20px);
   }
 }
@@ -35,12 +35,11 @@
   & > div:nth-child(1) {
     grid-row: 1/3;
     grid-column: 1;
-    
+
     img {
       width: px-2-rem(300px);
       height: px-2-rem(468px);
     }
-
   }
 
   & > div:nth-child(2) {
@@ -63,7 +62,7 @@
   & > div:nth-child(4) {
     grid-row: 2/4;
     grid-column: 2;
-    
+
     img {
       width: px-2-rem(270px);
       height: px-2-rem(423px);
@@ -76,7 +75,7 @@
   @include gap-width(px-2-rem(30px), 4);
   width: auto;
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     flex-direction: column;
   }
 }
@@ -85,7 +84,7 @@
   @include flex(space-between, flex-end);
   margin-bottom: px-2-rem(60px);
 
-  @media only screen and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-md) {
     flex-direction: column;
     align-items: center;
   }
@@ -95,7 +94,7 @@
   @include floating(px-2-rem(200px));
   @include transition(opacity);
   opacity: 1;
-  
+
   button {
     margin-top: px-2-rem(10px);
   }
