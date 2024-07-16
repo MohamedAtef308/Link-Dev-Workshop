@@ -30,7 +30,7 @@ section.choose-us > div.container {
     div.card {
       @include flex(flex-start, center);
       gap: px-2-rem(30px);
-      background-color: $light-blue;
+      background-color: var(--light-blue);
       position: absolute;
       top: px-2-rem(405px);
       left: px-2-rem(318px);
@@ -71,7 +71,7 @@ section.choose-us > div.container {
       p {
         margin-top: px-2-rem(15px);
         margin-left: px-2-rem(35px);
-        color: $grey-font;
+        color: var(--grey-font);
         font: {
           size: $font-16;
           weight: $font-normal;
@@ -90,7 +90,7 @@ section.choose-us > div.container {
         gap: px-2-rem(15px);
 
         p {
-          color: $grey-font;
+          color: var(--grey-font);
           font-size: $font-16;
         }
       }
@@ -126,7 +126,7 @@ section.coaching-support {
       div.line {
         height: px-2-rem(1px);
         width: 42.6%;
-        background-color: var(--grey-border); //$grey-border;
+        background-color: var(--grey-border); //var(--grey-border);
       }
     }
   }
@@ -153,10 +153,10 @@ section.ticket-booking > div.container {
   padding: px-2-rem(71px) px-2-rem(78px);
   background-image: linear-gradient(
     to right,
-    $dark-blue 0%,
-    $dark-blue 39%,
-    $dark-blue 39%,
-    $mid-grey 100%
+    var(--gradient-bg) 0%,
+    var(--gradient-bg) 39%,
+    var(--gradient-bg) 39%,
+    var(--mid-grey) 100%
   );
   box-sizing: border-box;
 
@@ -227,7 +227,7 @@ section.ask-question {
 
     p {
       margin-top: px-2-rem(5px);
-      color: $grey-font;
+      color: var(--grey-font);
       font-size: $font-16;
     }
   }
@@ -275,10 +275,10 @@ section.quote > div.container {
     margin-left: px-2-rem(-190px);
     padding: px-2-rem(60px);
 
-    &>img {
-    width: px-2-rem(69px);
-    height: px-2-rem(55.7px);
-  }
+    & > img {
+      width: px-2-rem(69px);
+      height: px-2-rem(55.7px);
+    }
 
     @media only screen and (max-width: $screen-sm) {
       margin-left: 0;
@@ -357,7 +357,7 @@ section.process-overview {
         padding-left: px-2-rem(70px);
 
         & > p:first-child {
-          color: $grey-font;
+          color: var(--grey-font);
           font: {
             weight: $semi-bold;
             size: $font-18;
@@ -366,7 +366,7 @@ section.process-overview {
 
         & > p:last-child {
           margin-top: px-2-rem(20px);
-          color: $grey-font;
+          color: var(--grey-font);
           font-size: $font-16;
           line-height: px-2-rem(30px);
         }
@@ -465,13 +465,13 @@ section.message-us .container {
       margin-top: px-2-rem(20px);
 
       p {
-        color: $grey-font;
+        color: var(--grey-font);
         line-height: px-2-rem(30px);
         font-size: $font-16;
       }
 
       i {
-        color: var(--light-blue); //$light-blue;
+        color: var(--light-blue); //var(--light-blue);
         font-size: $font-22;
       }
 
@@ -498,7 +498,7 @@ section.recent-blogs > div.container > div:last-child {
   @media only screen and (max-width: $screen-sm) {
     @include grid(1, 4, auto, 1fr);
 
-    &>div:first-child {
+    & > div:first-child {
       width: 100%;
     }
   }

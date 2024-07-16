@@ -1,16 +1,16 @@
 .minus {
   width: px-2-rem(30px);
   height: px-2-rem(3px);
-  background-color: var(--light-blue); //$light-blue;
+  background-color: var(--light-blue); //var(--light-blue);
   border-radius: $round-full;
 }
 
 .dot {
-  display:inline-block;
+  display: inline-block;
   width: px-2-rem(8px);
   height: px-2-rem(8px);
   border-radius: $round-full;
-  background-color: $dark-blue;
+  background-color: var(--dark-blue);
   border: $border-dark-blue;
 
   &.dot--hollow {

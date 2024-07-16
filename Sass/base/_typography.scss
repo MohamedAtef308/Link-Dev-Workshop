@@ -1,5 +1,5 @@
 body {
-  color: $dark-blue;
+  color: var(--dark-blue);
   font-family: $font-stack;
 }
 
@@ -50,7 +50,7 @@ h5 {
 }
 
 h6 {
-  color: $dark-blue;
+  color: var(--dark-blue);
   font: {
     weight: $semi-bold;
     size: $font-18;

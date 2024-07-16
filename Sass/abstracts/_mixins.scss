@@ -37,3 +37,16 @@
   @include flex(space-between, center);
   @include gap-width($gap, 2);
 }
+
+@mixin floating($y) {
+  position: fixed;
+  z-index: 99;
+  top: $y;
+  right: 10px;
+
+  i {
+    @include transition(color, 0.5s);
+    position: absolute;
+    font-size: $font-22;
+  }
+}

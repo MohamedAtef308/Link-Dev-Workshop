@@ -9,7 +9,7 @@ summary.angle {
     border: none;
     border-radius: $round-full;
     background-color: var(--primary-white);
-    color: $dark-blue;
+    color: var(--dark-blue);
   }
 
   &:hover {
@@ -19,6 +19,6 @@ summary.angle {
 
 details[open] summary.angle > div:last-child {
   transform: rotate(-90deg);
-  background-color: var(--light-blue); //$light-blue;
+  background-color: var(--light-blue); //var(--light-blue);
   color: var(--primary-white);
 }

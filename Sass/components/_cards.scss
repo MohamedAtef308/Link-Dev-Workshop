@@ -3,7 +3,7 @@
   border-radius: $round-sm;
   border: $border-grey;
   padding: px-2-rem(30px);
-  color: $dark-blue;
+  color: var(--dark-blue);
 
   h3 {
     margin-top: px-2-rem(-10px);
@@ -19,19 +19,19 @@
   }
 
   h6 {
-    color: $grey-font;
+    color: var(--grey-font);
     font-size: $font-14;
   }
 
   p {
     margin-top: px-2-rem(20px);
-    color: $grey-font;
+    color: var(--grey-font);
     line-height: px-2-rem(30px);
     font-size: $font-16;
   }
 
   li {
-    color: $grey-font;
+    color: var(--grey-font);
   }
 
   a {
@@ -51,7 +51,7 @@
     p {
       margin-top: 0;
       line-height: normal;
-      color: $dark-blue;
+      color: var(--dark-blue);
     }
 
     img {
@@ -119,7 +119,7 @@
       }
 
       & * {
-        color: var(--light-blue); //$light-blue;
+        color: var(--light-blue); //var(--light-blue);
         font-weight: $semi-bold;
       }
     }
@@ -131,47 +131,46 @@
       height: px-2-rem(290px);
     }
 
-    &> div:last-child {
+    & > div:last-child {
       padding: px-2-rem(30px);
       padding-left: 0;
-  
+
       .card-date {
         @include flex(flex-start, center);
         gap: px-2-rem(30px);
-  
+
         h6 {
           @include flex(flex-start, center);
           gap: px-2-rem(5px);
         }
-  
+
         & * {
-          color: $grey-font;
+          color: var(--grey-font);
           font-size: $font-16;
           font-weight: $font-normal;
         }
       }
-  
+
       & > div:has(> a) {
         margin-top: px-2-rem(20px);
-  
+
         i {
           font-size: $font-14;
         }
-  
+
         & * {
-          color: $dark-blue;
+          color: var(--dark-blue);
         }
       }
     }
   }
-  
 }
 
 .card--img-top {
   background-color: var(--primary-white);
   border: none;
   padding: 0;
-    width: px-2-rem(631px);
+  width: px-2-rem(631px);
 
   h4 {
     margin-top: px-2-rem(20px);
@@ -190,7 +189,7 @@
     font-weight: $semi-bold;
 
     a {
-      color: $dark-blue;
+      color: var(--dark-blue);
     }
 
     i {
@@ -210,14 +209,14 @@
         @include flex(flex-end, center);
         gap: px-2-rem(10px);
 
-        color: $grey-font;
+        color: var(--grey-font);
         font: {
           size: $font-16;
           weight: $font-normal;
         }
 
         i {
-          color: var(--light-blue); //$light-blue;
+          color: var(--light-blue); //var(--light-blue);
         }
       }
     }

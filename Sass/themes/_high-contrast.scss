@@ -1,0 +1,13 @@
+:root.high-contrast {
+  --background-white: #{$background-contrast};
+  --primary-white: #{$background-contrast};
+  --dark-blue: #{$primary-contrast};
+  --light-blue: #{$secondary-contrast};
+  --grey-font: #{$text-contrast};
+  --mid-grey: #{$text-contrast};
+  --grey-border: #{$secondary-contrast};
+  --primary-black: #{$secondary-contrast};
+  --footer-bg: #{$background-contrast};
+    --gradient-bg: #{$background-contrast};
+
+}

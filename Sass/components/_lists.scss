@@ -22,14 +22,15 @@ dd {
 }
 
 dt::before {
-  color: $light-blue;
+  color: var(--light-blue);
 }
 
-li::before, dt::before {
-    margin-right: px-2-rem(15px);
-    color: $light-blue; //$light-blue;
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free";
+li::before,
+dt::before {
+  margin-right: px-2-rem(15px);
+  color: var(--light-blue); //var(--light-blue);
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
 }
 
 .list--angle > li::before {
@@ -46,5 +47,5 @@ li::before, dt::before {
 
 .list--check--filled > dt::before {
   content: $icon-check--filled;
-  color: $dark-blue;
+  color: var(--dark-blue);
 }

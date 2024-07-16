@@ -14,7 +14,7 @@ nav {
     button {
       @extend .transparent;
       text-transform: uppercase;
-      color: $dark-blue;
+      color: var(--dark-blue);
       font: {
         size: $font-16;
         weight: bold;

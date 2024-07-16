@@ -8,11 +8,11 @@
 
   input {
     width: -webkit-fill-available;
-    color: $grey-font;
+    color: var(--grey-font);
   }
 
   textarea {
-    color: $grey-font;
+    color: var(--grey-font);
   }
 
   &:has(> textarea) {
@@ -30,14 +30,14 @@
       width: calc($input-width - ($input-height / 3));
 
       &::placeholder {
-        color: $primary-white;
+        color: var(--primary-white);
       }
     }
 
     // ICON
     & > div:last-child {
       @include flex(center, center);
-      background-color: $light-blue; //$light-blue;
+      background-color: var(--light-blue); //var(--light-blue);
       width: $input-height;
       height: $input-height;
       font: $font-16;

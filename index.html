@@ -23,16 +23,36 @@
     <title>Home 02</title>
   </head>
   <body>
-    <!-- THEME BUTTON -->
-    <button class="btn btn--theme" id="toggleBtn">
-      <i class="fa-solid fa-moon visible" id="moon"></i>
-      <i class="fa-solid fa-sun hidden" id="sun"></i>
-    </button>
-
     <!-- MENU BUTTON -->
      <button class="btn btn--menu" id="menuBtn">
       <i class="fa-solid fa-bars"></i>
      </button>
+
+    <!-- SETTINGS -->
+    <button class="btn btn--settings floating" id="settingsBtn">
+      <i class="fa-solid fa-gear"></i>
+    </button>
+
+    <div class="settings-container hidden">
+      <!-- DARK MODE -->
+      <button class="btn" id="darkBtn">
+        <i class="fa-solid fa-moon" id="moon"></i>
+        <i class="fa-solid fa-sun hidden" id="sun"></i>
+      </button>
+
+      <!-- CONTRAST MODE -->
+      <button class="btn" id="contrastBtn">
+        <i class="fa-solid fa-eye"></i>
+      </button>
+
+      <!-- <button class="btn " id="toggleBtn">
+        <i class="fa-solid fa-moon visible" id="moon"></i>
+        <i class="fa-solid fa-sun hidden" id="sun"></i>
+      </button> -->
+
+    </div>
+
+        <!-- THEME BUTTON -->
 
     <!-- NAV & HERO -->
     <section>

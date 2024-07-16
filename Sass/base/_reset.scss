@@ -58,7 +58,7 @@ option {
   width: 100%;
   height: 100%;
   border: 1 solid var(--grey-border);
-  color: $grey-font;
+  color: var(--grey-font);
   font-size: $font-16;
 }
 
@@ -68,7 +68,7 @@ label {
 
 textarea::placeholder {
   font-family: $font-stack;
-  color: $grey-font;
+  color: var(--grey-font);
 }
 
 details {
@@ -86,7 +86,7 @@ summary {
 
 summary + p {
   margin-top: px-2-rem(10px);
-  color: $grey-font;
+  color: var(--grey-font);
 }
 
 .icon * {

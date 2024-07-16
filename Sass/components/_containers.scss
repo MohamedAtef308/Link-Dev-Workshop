@@ -90,3 +90,18 @@
     align-items: center;
   }
 }
+
+.settings-container {
+  @include floating(px-2-rem(200px));
+  @include transition(opacity);
+  opacity: 1;
+  
+  button {
+    margin-top: px-2-rem(10px);
+  }
+
+  &.hidden {
+    opacity: 0;
+    z-index: -3;
+  }
+}
