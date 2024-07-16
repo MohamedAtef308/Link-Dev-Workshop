@@ -6,13 +6,22 @@ section.choose-us > div.container {
   & > div:first-child {
     position: relative;
 
+    @media only screen and (max-width: $screen-sm) {
+      @include flex(center, center);
+    }
+
+    img {
+      width: px-2-rem(510px);
+      height: px-2-rem(561px);
+    }
+
     .choose-us__offset-border {
       box-sizing: border-box;
       width: px-2-rem(510px);
       height: px-2-rem(561px);
       position: absolute;
       border: $border-light-blue-xl;
-      border-radius: px-2-rem(20px);
+      border-radius: $round-sm;
       top: px-2-rem(40px);
       left: px-2-rem(-40px);
       z-index: 1;
@@ -124,11 +133,18 @@ section.coaching-support {
 }
 
 // AVAILABLE COUNTRIES
-section.available-countries h5 {
-  margin-top: px-2-rem(20px);
-  font: {
-    size: $font-22;
-    weight: bold;
+section.available-countries {
+  img {
+    width: px-2-rem(70px);
+    height: px-2-rem(70px);
+  }
+
+  h5 {
+    margin-top: px-2-rem(20px);
+    font: {
+      size: $font-22;
+      weight: bold;
+    }
   }
 }
 
@@ -227,6 +243,8 @@ section.visa-category > div.container > div:last-child {
   }
 
   img {
+    width: px-2-rem(410px);
+    height: px-2-rem(660px);
     grid-column: 3;
     grid-row: 1 / 3;
   }
@@ -247,10 +265,20 @@ section.visa-category > div.container > div:last-child {
 section.quote > div.container {
   @include flex(flex-start, center);
 
+  img {
+    width: px-2-rem(740px);
+    height: px-2-rem(693px);
+  }
+
   .card {
     position: relative;
     margin-left: px-2-rem(-190px);
     padding: px-2-rem(60px);
+
+    &>img {
+    width: px-2-rem(69px);
+    height: px-2-rem(55.7px);
+  }
 
     @media only screen and (max-width: $screen-sm) {
       margin-left: 0;
@@ -468,6 +496,10 @@ section.recent-blogs > div.container > div:last-child {
   }
 
   @media only screen and (max-width: $screen-sm) {
-    @include grid(1, 4);
+    @include grid(1, 4, auto, 1fr);
+
+    &>div:first-child {
+      width: 100%;
+    }
   }
 }

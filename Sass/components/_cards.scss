@@ -53,6 +53,11 @@
       line-height: normal;
       color: $dark-blue;
     }
+
+    img {
+      width: px-2-rem(40px);
+      height: px-2-rem(40px);
+    }
   }
 
   //   BACKGROUND COLORS
@@ -81,6 +86,11 @@
   gap: px-2-rem(20px);
   padding: 0;
   border: none;
+
+  img {
+    width: px-2-rem(180px);
+    height: px-2-rem(248px);
+  }
 
   h4 {
     width: px-2-rem(320px);
@@ -115,44 +125,53 @@
     }
   }
 
-  &.card--with-date > div:last-child {
-    padding: px-2-rem(30px);
-    padding-left: 0;
-
-    .card-date {
-      @include flex(flex-start, center);
-      gap: px-2-rem(30px);
-
-      h6 {
-        @include flex(flex-start, center);
-        gap: px-2-rem(5px);
-      }
-
-      & * {
-        color: $grey-font;
-        font-size: $font-16;
-        font-weight: $font-normal;
-      }
+  &.card--with-date {
+    img {
+      width: px-2-rem(220px);
+      height: px-2-rem(290px);
     }
 
-    & > div:has(> a) {
-      margin-top: px-2-rem(20px);
-
-      i {
-        font-size: $font-14;
+    &> div:last-child {
+      padding: px-2-rem(30px);
+      padding-left: 0;
+  
+      .card-date {
+        @include flex(flex-start, center);
+        gap: px-2-rem(30px);
+  
+        h6 {
+          @include flex(flex-start, center);
+          gap: px-2-rem(5px);
+        }
+  
+        & * {
+          color: $grey-font;
+          font-size: $font-16;
+          font-weight: $font-normal;
+        }
       }
-
-      & * {
-        color: $dark-blue;
+  
+      & > div:has(> a) {
+        margin-top: px-2-rem(20px);
+  
+        i {
+          font-size: $font-14;
+        }
+  
+        & * {
+          color: $dark-blue;
+        }
       }
     }
   }
+  
 }
 
 .card--img-top {
   background-color: var(--primary-white);
   border: none;
   padding: 0;
+    width: px-2-rem(631px);
 
   h4 {
     margin-top: px-2-rem(20px);
@@ -162,6 +181,8 @@
 
   img {
     margin-top: px-2-rem(20px);
+    width: 100%;
+    height: px-2-rem(301px);
   }
 
   div:has(> a) {

@@ -19,7 +19,7 @@ textarea,
 input {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: transparent;
-  padding-left: 1.25rem;
+  padding-left: 20px;
   height: 100%;
   width: 100%;
   font-size: 1rem;
@@ -189,7 +189,7 @@ h6 {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: capitalize;
-  border-radius: 62.4375rem;
+  border-radius: 999px;
   padding: 1.25rem 1.875rem;
   height: 3.75rem;
   border: none;
@@ -270,8 +270,8 @@ h6 {
 
 .card {
   transition: all 0.25s linear;
-  border-radius: 1.25rem;
-  border: 0.0625rem solid #e3dbd8;
+  border-radius: 20px;
+  border: 1px solid #e3dbd8;
   padding: 1.875rem;
   color: #2437ac;
 }
@@ -311,25 +311,29 @@ h6 {
   width: 11.875rem;
   height: 2.5rem;
   padding: 0.625rem 0.9375rem;
-  border: 0.03125rem solid #e3dbd8;
-  border-radius: 0.62375rem;
+  border: 0.5px solid #e3dbd8;
+  border-radius: 9.98px;
 }
 .card.card--xs p {
   margin-top: 0;
   line-height: normal;
   color: #2437ac;
 }
+.card.card--xs img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 .card.card--white {
   background-color: var(--primary-white);
 }
 .card.card--border-xl {
-  border: 0.3125rem solid #00b8ff;
+  border: 5px solid #00b8ff;
 }
 .card.card--border-lg {
-  border: 0.125rem solid #00b8ff;
+  border: 2px solid #00b8ff;
 }
 .card.card--hover:hover {
-  border: 0.0625rem solid #00b8ff;
+  border: 1px solid #00b8ff;
 }
 
 .card--img-left {
@@ -342,6 +346,10 @@ h6 {
   gap: 1.25rem;
   padding: 0;
   border: none;
+}
+.card--img-left img {
+  width: 11.25rem;
+  height: 15.5rem;
 }
 .card--img-left h4 {
   width: 20rem;
@@ -367,6 +375,10 @@ h6 {
 .card--img-left > div:last-child > div:has(> a) * {
   color: var(--light-blue);
   font-weight: 600;
+}
+.card--img-left.card--with-date img {
+  width: 13.75rem;
+  height: 18.125rem;
 }
 .card--img-left.card--with-date > div:last-child {
   padding: 1.875rem;
@@ -407,6 +419,7 @@ h6 {
   background-color: var(--primary-white);
   border: none;
   padding: 0;
+  width: 39.4375rem;
 }
 .card--img-top h4 {
   margin-top: 1.25rem;
@@ -415,6 +428,8 @@ h6 {
 }
 .card--img-top img {
   margin-top: 1.25rem;
+  width: 100%;
+  height: 18.8125rem;
 }
 .card--img-top div:has(> a) {
   margin-top: 1.875rem;
@@ -455,7 +470,7 @@ h6 {
 
 .container {
   width: 67vw;
-  border-radius: 3.125rem;
+  border-radius: 50px;
 }
 @media only screen and (max-width: 768px) {
   .container {
@@ -494,7 +509,7 @@ h6 {
 
 .collage-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
   gap: 1.875rem;
 }
@@ -502,17 +517,30 @@ h6 {
   grid-row: 1/3;
   grid-column: 1;
 }
+.collage-container > div:nth-child(1) img {
+  width: 18.75rem;
+  height: 29.25rem;
+}
 .collage-container > div:nth-child(2) {
   grid-row: 1;
   grid-column: 2;
 }
+.collage-container > div:nth-child(2) img {
+  width: 16.875rem;
+  height: 11.3125rem;
+}
 .collage-container > div:nth-child(3) {
   grid-row: 3;
   grid-column: 1;
+  width: 14.6875rem;
 }
 .collage-container > div:nth-child(4) {
   grid-row: 2/4;
   grid-column: 2;
+}
+.collage-container > div:nth-child(4) img {
+  width: 16.875rem;
+  height: 26.4375rem;
 }
 
 .card-fill-container {
@@ -598,16 +626,16 @@ h6 {
   width: 1.875rem;
   height: 0.1875rem;
   background-color: var(--light-blue);
-  border-radius: 62.4375rem;
+  border-radius: 999px;
 }
 
 .dot {
   display: inline-block;
   width: 0.5rem;
   height: 0.5rem;
-  border-radius: 62.4375rem;
+  border-radius: 999px;
   background-color: #2437ac;
-  border: 0.0625rem solid #2437ac;
+  border: 1px solid #2437ac;
 }
 .dot.dot--hollow {
   background-color: transparent;
@@ -702,7 +730,7 @@ summary.angle > div:last-child {
   width: 2.5rem;
   height: 2.5rem;
   border: none;
-  border-radius: 62.4375rem;
+  border-radius: 999px;
   background-color: var(--primary-white);
   color: #2437ac;
 }
@@ -725,8 +753,8 @@ details[open] summary.angle > div:last-child {
   box-sizing: border-box;
   width: 16.25rem;
   height: 3.75rem;
-  border: 0.0625rem solid #e3dbd8;
-  border-radius: 62.4375rem;
+  border: 1px solid #e3dbd8;
+  border-radius: 999px;
 }
 .text-input input {
   width: -webkit-fill-available;
@@ -764,7 +792,7 @@ details[open] summary.angle > div:last-child {
   border-radius: 50%;
 }
 .text-input:has(> textarea) {
-  border-radius: 1.25rem;
+  border-radius: 20px;
 }
 .text-input.text-input--1-icon {
   padding-right: 1.25rem;
@@ -792,7 +820,7 @@ nav {
   width: 100%;
   background-color: var(--primary-white);
   padding: 0.625rem;
-  border-radius: 62.4375rem;
+  border-radius: 999px;
 }
 nav .nav__links-container {
   display: flex;
@@ -874,6 +902,8 @@ hero .hero__img-container {
 }
 hero .hero__img-container > img {
   position: absolute;
+  width: 27.5rem;
+  height: 40rem;
 }
 hero .hero__img-container .hero__cards-container > div {
   position: absolute;
@@ -965,13 +995,26 @@ section.choose-us > div.container > div, section.choose-us > div.container > art
 section.choose-us > div.container > div:first-child {
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  section.choose-us > div.container > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+section.choose-us > div.container > div:first-child img {
+  width: 31.875rem;
+  height: 35.0625rem;
+}
 section.choose-us > div.container > div:first-child .choose-us__offset-border {
   box-sizing: border-box;
   width: 31.875rem;
   height: 35.0625rem;
   position: absolute;
-  border: 0.3125rem solid #00b8ff;
-  border-radius: 1.25rem;
+  border: 5px solid #00b8ff;
+  border-radius: 20px;
   top: 2.5rem;
   left: -2.5rem;
   z-index: 1;
@@ -1082,6 +1125,10 @@ section.coaching-support .container > div:last-child div.line {
   background-color: var(--grey-border);
 }
 
+section.available-countries img {
+  width: 4.375rem;
+  height: 4.375rem;
+}
 section.available-countries h5 {
   margin-top: 1.25rem;
   font-size: 1.375rem;
@@ -1193,6 +1240,8 @@ section.visa-category > div.container > div:last-child {
   }
 }
 section.visa-category > div.container > div:last-child img {
+  width: 25.625rem;
+  height: 41.25rem;
   grid-column: 3;
   grid-row: 1/3;
 }
@@ -1211,10 +1260,18 @@ section.quote > div.container {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+section.quote > div.container img {
+  width: 46.25rem;
+  height: 43.3125rem;
+}
 section.quote > div.container .card {
   position: relative;
   margin-left: -11.875rem;
   padding: 3.75rem;
+}
+section.quote > div.container .card > img {
+  width: 4.3125rem;
+  height: 3.48125rem;
 }
 @media only screen and (max-width: 768px) {
   section.quote > div.container .card {
@@ -1299,8 +1356,8 @@ section.process-overview .card-fill-container article > div:first-child div {
   height: 5rem;
   margin-top: 2.5rem;
   background-color: var(--primary-white);
-  border: 0.0625rem solid #00b8ff;
-  border-radius: 62.4375rem;
+  border: 1px solid #00b8ff;
+  border-radius: 999px;
   margin-right: -2.5rem;
   font-size: 2.8125rem;
 }
@@ -1378,7 +1435,7 @@ section.success-story > div.container > div:last-child .card > div:first-child {
   width: 4rem;
   height: 4rem;
   background: var(--primary-white);
-  border-radius: 62.4375rem;
+  border-radius: 999px;
   font-size: 1.875rem;
 }
 @media only screen and (max-width: 768px) {
@@ -1460,8 +1517,11 @@ section.recent-blogs > div.container > div:last-child > div:first-child {
 @media only screen and (max-width: 768px) {
   section.recent-blogs > div.container > div:last-child {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, 1fr);
+  }
+  section.recent-blogs > div.container > div:last-child > div:first-child {
+    width: 100%;
   }
 }
 
@@ -1513,7 +1573,7 @@ footer .logo-social-media .social-media > div {
   transition: all 0.25s linear;
 }
 footer .logo-social-media .social-media > div:hover {
-  border: 0.0625rem solid #00b8ff;
+  border: 1px solid #00b8ff;
 }
 footer .lists {
   display: flex;
@@ -1585,6 +1645,11 @@ body {
   --primary-black: #16171a;
   --footer-bg: #2437ac;
   font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 8px;
+  }
 }
 
 :root.dark-theme {

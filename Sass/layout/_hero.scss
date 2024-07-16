@@ -16,6 +16,8 @@ hero {
 
     & > img {
       position: absolute;
+      width: px-2-rem(440px);
+      height: px-2-rem(640px);
     }
 
     .hero__cards-container > div {
