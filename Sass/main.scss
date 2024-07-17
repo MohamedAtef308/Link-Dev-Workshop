@@ -4,6 +4,13 @@
 @import "./abstracts/mixins";
 @import "./abstracts/extend";
 
+// VENDORS
+@import "./vendors/icomoon";
+@import "./vendors/fontawesome/scss/fontawesome.scss";
+@import "./vendors/fontawesome/scss/solid.scss";
+@import "./vendors/fontawesome/scss/regular.scss";
+@import "./vendors/fontawesome/scss/brands.scss";
+
 // BASE
 @import "./base/reset";
 @import "./base/typography";
@@ -33,4 +40,4 @@
 // THEMES
 @import "./themes/light";
 @import "./themes/dark";
-@import "./themes/high-contrast"
+@import "./themes/high-contrast";
